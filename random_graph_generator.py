@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pylab as plt
 
-# graph=np.zeros((n,n))
-
 def gen_graph(n=6,scale=100):
     '''
     n: number of vertices in the graph
@@ -22,7 +20,11 @@ def graph_plot(graph):
     plt.scatter(X,Y)
     plt.show()
 
-# test
+'''
+use this script to generate N random graphs with n nodes
+target file is named as 'random_graph.csv', saved in current directory
+'''
+
 if __name__=='__main__':
     n=6 # node number of graph
     N=2 # number of graph generated
@@ -37,6 +39,3 @@ if __name__=='__main__':
     # print(gen_graphs)
 
     np.savetxt('random_graphs.csv',gen_graphs)
-        
-
-
