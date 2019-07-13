@@ -1,6 +1,19 @@
 import numpy as np
 import matplotlib.pylab as plt
 
+'''
+use this script to generate N random graphs with n nodes
+
+the graph is a list of random 2-tuples, in form of {(x1,y1), (x2,y2)...}
+
+you can use the gen_graph() function to generate a single graphor run the code in the main() part to generate a long list of points
+
+you can extract the graph as a list from the saved file using graph_decipher() function
+
+saved in target file named as 'random_graph.csv' in current directory
+
+'''
+
 def gen_graph(n=6,scale=100):
     '''
     n: number of vertices in the graph
@@ -22,7 +35,11 @@ def graph_plot(graph):
 
 def graphs_decipher(target_file,n=6):
     '''
+    extract graphs from a long randomly generated list of 2-tuples 
+    (saved in a file as 2-D numpy array) 
 
+    target_file: file name of the saved array
+    return a list of 2*n array
     '''
     data=np.loadtxt(target_file)
     N=data.shape[0]//n
@@ -31,23 +48,10 @@ def graphs_decipher(target_file,n=6):
         graphs.append(data[i*n:(i+1)*n])
     return graphs
 
-'''
-use this script to generate N random graphs with n nodes
-
-the graphs are vertically stacked into one big 2-D array
-
-you can extract the graph as a list from the saved file using graph_decipher
-
-saved in target file named as 'random_graph.csv' in current directory
-
-
-'''
-
 if __name__=='__main__':
     n=6 # node number of graph
     N=20 # number of graph generated
     test=True
-    gen_graphs=[]
     print("generating graphs...")
     
     for i in range(N):
