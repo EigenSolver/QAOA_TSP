@@ -51,6 +51,8 @@ def graphs_decipher(target_file,n=6):
 if __name__=='__main__':
     n=6 # node number of graph
     N=20 # number of graph generated
+    target_file="random_graphs.csv"
+    
     test=True
     print("generating graphs...")
     
@@ -60,11 +62,10 @@ if __name__=='__main__':
     print("finished!")
 
     gen_graphs=np.vstack(gen_graphs)
-    np.savetxt('random_graphs.csv',gen_graphs)
+    np.savetxt(target_file,gen_graphs)
     print("graphs saved!")
     
     if test:
-        target_file="random_graphs.csv"
         graph_plot(graphs_decipher(target_file)[0])
         print("successfully extract graphs!")
     
