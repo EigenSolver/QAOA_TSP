@@ -1,9 +1,11 @@
 import numpy as np
 import itertools
 
+
 def get_distance_matrix(array):
     '''
-    return a n*n distance matrix for a graph (n*2 array)
+    given a set of vertices of a graph in form of n*2 array (x,y)
+    return a n*n distance matrix for this graph (suppose it's all connected)
     '''
     def distance(p1,p2):
         return np.sqrt(np.sum((p1-p2)**2))
