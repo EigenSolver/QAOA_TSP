@@ -1,9 +1,3 @@
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#  Quantum Approximate Optimisation Algorithm
-## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-''' Inspired by Grove's pyQuil implementation. '''
-
 import projectq as pq
 from projectq import MainEngine
 from projectq.ops import QubitOperator, Measure, All, H, TimeEvolution
