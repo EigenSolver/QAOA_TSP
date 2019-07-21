@@ -8,7 +8,9 @@
 3. Willsch et al. - 2019 - Benchmarking the QAOA
 
 1: numerical experiment on QAOA, positive to Quantum Supremacy
+
 2: test QAOA performance on circuit depth p
+
 3: give benchmark and performance indicators of QAOA
 
 ### Possible Defects of QAOA
