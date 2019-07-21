@@ -211,20 +211,8 @@ class VQE(object):
 
                 # Add to expectation
                 expectation += parity * coef * count / draws
-        
+    
         return expectation
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Test
