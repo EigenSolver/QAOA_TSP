@@ -17,5 +17,7 @@
 ## Yongcheng Ding
 
 ## Bin Cheng
+- `Variational learning of Grover’s quantum search algorithm - PhysRevA.98.062333`: variational version of Grover search
+- `Computational Speedups Using Small Quantum Devices - PhysRevLett.121.250501`: decompose a $\textsf{3-SAT}$ problem into small pieces
 
 ## Yixian Qiu
