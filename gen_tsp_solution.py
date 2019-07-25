@@ -1,9 +1,11 @@
-from random_graph_generator import graphs_decipher
-from tsp_dp_solver import get_distance_matrix,held_karp
+from lib.random_graph_generator import graphs_decipher,get_distance_matrix
+from lib.tsp.tsp_dp_solver import held_karp
 
 n=6
-target_file="random_graphs.csv"
-graphs=graphs_decipher(target_file,n)
+data_file="./data/random_graphs.txt"
+solution_file="./data/tsp_solutions.txt"
+
+graphs=graphs_decipher(data_file,n)
 print("graphs loaded...")
 
 solution_set=[]
@@ -17,7 +19,6 @@ for g in graphs:
         print("solving TSP...{0}/{1}".format(count,N))
 
 print("writing solutions...")
-solution_file="tsp_solutions.txt"
 with open(solution_file,'w') as f:
     for solution in solution_set:
         f.write(str(solution)+"\n")

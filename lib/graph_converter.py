@@ -93,30 +93,29 @@ def TSP_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
         H_penalty+=param_lambd[s]*H_square(s,transpose=True)
     
     return H_cost+H_penalty
-
+    
 # test for implementation
-if __name__=="__main__":
-    # ===================================
-    from classical_algorithm.tsp_dp_solver import get_distance_matrix   
-    from classical_algorithm.random_graph_generator import gen_graph, gen_random_adjancent_matrix
-    n=6
-    g=gen_graph(n)
-    distance_matrix=get_distance_matrix(g)
+# if __name__=="__main__":
+#     # ===================================
+#     from classical_algorithm.tsp_dp_solver import get_distance_matrix   
+#     from classical_algorithm.random_graph_generator import gen_graph, gen_random_adjancent_matrix
+#     n=6
+#     g=gen_graph(n)
+#     distance_matrix=get_distance_matrix(g)
 
-    # print(TSP_hamiltonian(distance_matrix))
-    # ====================
-    print("Maxcut Hamiltonian")
-    print(MAXCUT_Hamiltonian(gen_random_adjancent_matrix(3,threshold=1)))
+#     # print(TSP_hamiltonian(distance_matrix))
+#     # ====================
+#     print("Maxcut Hamiltonian")
+#     print(MAXCUT_Hamiltonian(gen_random_adjancent_matrix(3,threshold=1)))
 
-    # ======================
+#     # ======================
     
-    def default_mixer(n_qubits=3):
-        # generate mixer Hamiltonian
-        H_mixer = 0*QubitOperator("")
-        for i in range(n_qubits):
-            H_mixer += QubitOperator("X{}".format(i))
-        return H_mixer
+#     def default_mixer(n_qubits=3):
+#         # generate mixer Hamiltonian
+#         H_mixer = 0*QubitOperator("")
+#         for i in range(n_qubits):
+#             H_mixer += QubitOperator("X{}".format(i))
+#         return H_mixer
 
-    print("Mixer Hamiltonian")
-    print(default_mixer())
-    
+#     print("Mixer Hamiltonian")
+#     print(default_mixer())

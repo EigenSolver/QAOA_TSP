@@ -28,6 +28,14 @@ def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
                     adj_matrix[j,i]=1
     return adj_matrix
 
+
+def generate_adj_matrix(N,n,save_file):
+    print("generating random adjancent matrix...")
+    data = []
+    for i in range(N):
+        data.append(gen_random_adjancent_matrix(n).flatten())
+    np.savetxt(save_file, np.array(data, dtype=int))
+
 def gen_graph(n=6,scale=100):
     '''
     n: number of vertices in the graph
@@ -62,6 +70,25 @@ def graphs_decipher(target_file,n=6):
     for i in range(N):
         graphs.append(data[i*n:(i+1)*n])
     return graphs
+
+def get_distance_matrix(array):
+    '''
+    given a set of vertices of a graph in form of n*2 array (x,y)
+    return a n*n distance matrix for this graph (suppose it's all connected)
+    '''
+    def distance(p1,p2):
+        return np.sqrt(np.sum((p1-p2)**2))
+
+    n=array.shape[0]
+    distance_matrix=np.zeros((n,n))
+
+    for i in range(n):
+        for j in range(i+1):
+            distance_matrix[i,j]=distance(array[i,:],array[j,:])
+            distance_matrix[j,i]=distance_matrix[i,j]
+
+    return distance_matrix
+
 
 if __name__=='__main__':
     n=6 # node number of graph

@@ -6,8 +6,8 @@ import itertools
 import math
 import random
 from six import iteritems, itervalues
-from random_graph_generator import graphs_decipher
-from tsp_dp_solver import get_distance_matrix
+from lib.random_graph_generator import graphs_decipher
+from lib.random_graph_generator import get_distance_matrix
 
 #read the dataset 
 n=6

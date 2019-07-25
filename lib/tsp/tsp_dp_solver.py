@@ -1,26 +1,6 @@
 import numpy as np
 import itertools
 
-
-def get_distance_matrix(array):
-    '''
-    given a set of vertices of a graph in form of n*2 array (x,y)
-    return a n*n distance matrix for this graph (suppose it's all connected)
-    '''
-    def distance(p1,p2):
-        return np.sqrt(np.sum((p1-p2)**2))
-
-    n=array.shape[0]
-    distance_matrix=np.zeros((n,n))
-
-    for i in range(n):
-        for j in range(i+1):
-            distance_matrix[i,j]=distance(array[i,:],array[j,:])
-            distance_matrix[j,i]=distance_matrix[i,j]
-
-    return distance_matrix
-
-
 def held_karp(dists):
     """
     from https://github.com/CarlEkerot/held-karp/blob/master/held-karp.py
@@ -88,7 +68,7 @@ def held_karp(dists):
 
 if __name__=='__main__':
     from matplotlib.pylab import imshow
-    from random_graph_generator import gen_graph, graph_plot,graphs_decipher
+    from lib.random_graph_generator import get_distance_matrix,gen_graph, graph_plot,graphs_decipher
     
     g=gen_graph(10)
     # graph_plot(g)

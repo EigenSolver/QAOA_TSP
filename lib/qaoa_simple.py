@@ -2,7 +2,6 @@ import projectq as pq
 from projectq import MainEngine
 from projectq.ops import QubitOperator, Measure, All, H, TimeEvolution
 from projectq.meta import Loop
-from graph_converter import MAXCUT_Hamiltonian
 
 import numpy as np
 import scipy as sp
@@ -25,7 +24,10 @@ class QAOA(object):
         
         # pass constructive function
         self.ansatz_func = ansatz_func or self.default_ansatz 
+ 
         self.result=None
+        self.solution=None
+        self.min_cost=None
     
     # just a sub function! not a method
     def default_ansatz(self, engine,n_qubits):
@@ -60,10 +62,12 @@ class QAOA(object):
         return expectation
 
 
-    def optimize(self,method="COBYLA"):
+    def optimize(self,method="TNC"):#"COBYLA"
         params0 = np.hstack((self.init_betas, self.init_gammas))
+        bounds=[(0, np.pi) for i in range(self.n_steps)]+[(0, 2*np.pi) for j in range(self.n_steps)]
+
         self.result=sp.optimize.minimize(self.cost_expectation, \
-            params0, method=method)
+            params0, method=method,bounds=bounds)
 
     def get_result(self):
         return self.result
@@ -73,7 +77,7 @@ class QAOA(object):
         betas = params[:self.n_steps]
         gammas = params[self.n_steps:]
 
-        min_cost=None
+        self.min_cost=None
         self.solution=[]
         for i in range(draw):
             state = self.ansatz_func(self.engine,self.n_qubits)
@@ -86,24 +90,31 @@ class QAOA(object):
             All(Measure)|state
             self.engine.flush()
             cost=self.engine.backend.get_expectation_value(self.H_cost,state)
-            if min_cost is None:
-                min_cost=cost
-            elif min_cost>cost:
-                min_cost=cost
+            if self.min_cost is None:
+                self.min_cost=cost
+            elif self.min_cost>cost:
+                self.min_cost=cost
                 self.solution=[int(qb) for qb in state]
-        return self.solution
-    
-if __name__ == "__main__":
-    save_file="random_adjancent_matrix.csv"
-    data=np.loadtxt(save_file)
-    N=data.shape[0]
-    n=int(np.sqrt(data.shape[1]))
-    
-    H_cost=MAXCUT_Hamiltonian(data[0,:].reshape((n,n)))
+        
+        return (self.solution,self.min_cost)
 
-    eng=MainEngine()
-    qaoa=QAOA(eng,H_cost,n,n_steps=2)
-    qaoa.optimize()
-    print(qaoa.get_result().fun)
-    print(qaoa.get_solution())
+
+# test pass  
+# if __name__ == "__main__":
+#     from graph_converter import MAXCUT_Hamiltonian
+#     from ProjectQ_header import *
+
+
+#     save_file="random_adjancent_matrix.csv"
+#     data=np.loadtxt(save_file)
+#     N=data.shape[0]
+#     n=int(np.sqrt(data.shape[1]))
+    
+#     H_cost=MAXCUT_Hamiltonian(data[0,:].reshape((n,n)))
+
+#     qaoa=QAOA(eng,H_cost,n,n_steps=1)
+#     print('compile done...')
+#     qaoa.optimize()
+#     print(qaoa.get_result())
+#     print(qaoa.get_solution())
     

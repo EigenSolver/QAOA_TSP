@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 
 # Copyright 2018, Rigetti Computing
@@ -53,17 +52,16 @@ def goemans_williamson(graph: nx.Graph) -> Tuple[np.ndarray, float, float]:
     return colors, score, bound
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+#     from classical_algorithm.random_graph_generator import gen_random_adjancent_matrix
 
-    from classical_algorithm.random_graph_generator import gen_random_adjancent_matrix
+#     n=4
+#     G = nx.to_networkx_graph(gen_random_adjancent_matrix(n))
+#     laplacian = np.array(0.25 * nx.laplacian_matrix(G).todense())
+#     bound = goemans_williamson(G)[2]
 
-    n=4
-    G = nx.to_networkx_graph(gen_random_adjancent_matrix(n))
-    laplacian = np.array(0.25 * nx.laplacian_matrix(G).todense())
-    bound = goemans_williamson(G)[2]
+#     print(goemans_williamson(G))
 
-    print(goemans_williamson(G))
+#     scores = [goemans_williamson(G)[1] for n in range(100)]
 
-    scores = [goemans_williamson(G)[1] for n in range(100)]
-
-    print(min(scores), max(scores))
+#     print(min(scores), max(scores))
