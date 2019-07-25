@@ -1,2 +1,4 @@
-.ipynb_checkpoints/
-__pycache__/
+./.ipynb_checkpoints/
+./lib/.ipynb_checkpoints/
+./lib/__pycache__/
+./lib/tsp/__pycache__/
