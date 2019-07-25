@@ -7,14 +7,35 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import minimize_scalar
 
-def graph_to_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
+
+def MAXCUT_Hamiltonian(adjancent_matrix,minimum=True):
+    '''
+    parameters
+        adjancent_matrix: (2d numpy array)
+    return 
+        H_cost: (QubitOperator) Hamiltonian for maxcut problem
+    '''
+    m=adjancent_matrix
+    n=m.shape[0]
+
+    H_cost=0*QubitOperator("")
+    for i in range(n-1):
+        for j in range(i+1,n):
+            H_cost+=1/2*m[i,j]*(QubitOperator("Z{0} Z{1}".format(i,j))-QubitOperator(""))
+
+    if minimum:
+        return H_cost
+    else:
+        return (-1)*H_cost
+
+def TSP_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
     '''
     parameters
         distance_matrix: (2d numpy array)
         weight_matrix: (2d numpy array)
         penalty_coeff: (1d numpy array len 2n) coefficient for penalty hamiltonian
     return 
-        H_tsp: (QubitOperator) Hamiltonian for TSP
+        H_tsp: (QubitOperator) Hamiltonian for travelling salesman problem
     '''
 
     W=weight_matrix or np.ones(distance_matrix.shape)
@@ -33,6 +54,7 @@ def graph_to_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
     def index(i,j):
         return i*n+j
     
+    # how to reduce the cost?
     H_cost=0*QubitOperator("")
     for s in range(n-1):
         for i in range(n):
@@ -74,10 +96,27 @@ def graph_to_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
 
 # test for implementation
 if __name__=="__main__":
-    from classical_TSP.random_graph_generator import gen_graph
-    from classical_TSP.tsp_dp_solver import get_distance_matrix   
+    # ===================================
+    from classical_algorithm.tsp_dp_solver import get_distance_matrix   
+    from classical_algorithm.random_graph_generator import gen_graph, gen_random_adjancent_matrix
     n=6
     g=gen_graph(n)
     distance_matrix=get_distance_matrix(g)
 
-    print(graph_to_hamiltonian(distance_matrix))
+    # print(TSP_hamiltonian(distance_matrix))
+    # ====================
+    print("Maxcut Hamiltonian")
+    print(MAXCUT_Hamiltonian(gen_random_adjancent_matrix(3,threshold=1)))
+
+    # ======================
+    
+    def default_mixer(n_qubits=3):
+        # generate mixer Hamiltonian
+        H_mixer = 0*QubitOperator("")
+        for i in range(n_qubits):
+            H_mixer += QubitOperator("X{}".format(i))
+        return H_mixer
+
+    print("Mixer Hamiltonian")
+    print(default_mixer())
+    

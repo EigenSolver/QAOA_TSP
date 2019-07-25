@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pylab as plt
+from numpy.random import rand
 
 '''
 use this script to generate N random graphs with n nodes
@@ -14,6 +15,19 @@ saved in target file named as 'random_graph.csv' in current directory
 
 '''
 
+def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
+    adj_matrix=np.zeros((n,n))
+    for i in range(n-1):
+        for j in range(i+1,n):
+            if rand()<threshold:
+                adj_matrix[i,j]=1
+            if symmetric:
+                adj_matrix[j,i]=adj_matrix[i,j]
+            else:
+                if rand()<threshold:
+                    adj_matrix[j,i]=1
+    return adj_matrix
+
 def gen_graph(n=6,scale=100):
     '''
     n: number of vertices in the graph
@@ -23,6 +37,7 @@ def gen_graph(n=6,scale=100):
     '''
     points=[(np.random.rand(),np.random.rand()) for i in range(n)]
     return scale*np.array(points)
+
 
 def graph_plot(graph):
     '''
@@ -56,13 +71,14 @@ if __name__=='__main__':
     test=True
     print("generating graphs...")
     
+    graphs=[]
     for i in range(N):
         graph=gen_graph(n)
-        gen_graphs.append(graph)
+        graphs.append(graph)
     print("finished!")
 
-    gen_graphs=np.vstack(gen_graphs)
-    np.savetxt(target_file,gen_graphs)
+    graphs=np.vstack(graphs)
+    np.savetxt(target_file,graphs)
     print("graphs saved!")
     
     if test:

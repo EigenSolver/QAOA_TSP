@@ -9,8 +9,8 @@ from dwave.system.composites import FixedEmbeddingComposite
 import minorminer
 import networkx as nx
 import neal
-from classical_TSP.random_graph_generator import graphs_decipher
-from classical_TSP.tsp_dp_solver import get_distance_matrix
+from classical_algorithm.random_graph_generator import graphs_decipher
+from classical_algorithm.tsp_dp_solver import get_distance_matrix
 
 
 #read the dataset
