@@ -1,4 +1,4 @@
-import projectq
+import projectq.setups.decompositions as rules
 from projectq.cengines import (AutoReplacer,
                                LocalOptimizer,
                                TagRemover,
@@ -13,7 +13,7 @@ from mpi4py import MPI
 backend = SimulatorMPI(gate_fusion=True, num_local_qubits=20)
 
 cache_depth = 10
-rule_set = DecompositionRuleSet(modules=[projectq.setups.decompositions])
+rule_set = DecompositionRuleSet(modules=[rules])
 engines = [TagRemover()
             , LocalOptimizer(cache_depth)
             , AutoReplacer(rule_set)
