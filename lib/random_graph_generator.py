@@ -36,6 +36,7 @@ def generate_adj_matrix(N,n,save_file):
         data.append(gen_random_adjancent_matrix(n).flatten())
     np.savetxt(save_file, np.array(data, dtype=int))
 
+    
 def gen_graph(n=6,scale=100):
     '''
     n: number of vertices in the graph
@@ -66,9 +67,7 @@ def graphs_decipher(target_file,n=6):
     '''
     data=np.loadtxt(target_file)
     N=data.shape[0]//n
-    graphs=[]
-    for i in range(N):
-        graphs.append(data[i*n:(i+1)*n])
+    graphs=[data[i*n:(i+1)*n] for i in range(N)]
     return graphs
 
 def get_distance_matrix(array):
@@ -93,7 +92,7 @@ def get_distance_matrix(array):
 if __name__=='__main__':
     n=6 # node number of graph
     N=20 # number of graph generated
-    target_file="random_graphs.csv"
+    target_file="random_graphs.txt"
     
     test=True
     print("generating graphs...")

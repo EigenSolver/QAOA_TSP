@@ -28,7 +28,7 @@ def MAXCUT_Hamiltonian(adjancent_matrix,minimum=True):
     else:
         return (-1)*H_cost
 
-def TSP_hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
+def TSP_Hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
     '''
     parameters
         distance_matrix: (2d numpy array)
