@@ -1,4 +1,5 @@
 ./.ipynb_checkpoints/
 ./lib/.ipynb_checkpoints/
+./__puchche__/
 ./lib/__pycache__/
 ./lib/tsp/__pycache__/

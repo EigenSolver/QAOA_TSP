@@ -41,7 +41,8 @@ def TSP_Hamiltonian(distance_matrix,weight_matrix=None,penalty_coeff=None):
     W=weight_matrix or np.ones(distance_matrix.shape)
     D=distance_matrix
     n=distance_matrix.shape[0]
-    penalty_coeff=penalty_coeff or np.ones(2*n)
+    if penalty_coeff is None:
+        penalty_coeff=np.ones(2*n)
     param_mu=penalty_coeff[:n]
     param_lambd=penalty_coeff[n:]
     
