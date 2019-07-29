@@ -1,5 +1,9 @@
 from lib.random_graph_generator import graphs_decipher,get_distance_matrix
+<<<<<<< HEAD
 from lib.tsp_solver import held_karp
+=======
+from lib.tsp.tsp_solver import held_karp
+>>>>>>> f891fe325411c51ada9dc38c3966740f4dd5a642
 
 n=4
 data_file="./data/random_graphs.txt"
