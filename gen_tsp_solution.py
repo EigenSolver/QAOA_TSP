@@ -1,5 +1,5 @@
 from lib.random_graph_generator import graphs_decipher,get_distance_matrix
-from lib.tsp.tsp_dp_solver import held_karp
+from lib.tsp.tsp_solver import held_karp
 
 n=6
 data_file="./data/random_graphs.txt"
