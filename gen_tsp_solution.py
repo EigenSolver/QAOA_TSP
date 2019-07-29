@@ -1,9 +1,9 @@
 from lib.random_graph_generator import graphs_decipher,get_distance_matrix
-from lib.tsp.tsp_dp_solver import held_karp
+from lib.tsp_solver import held_karp
 
-n=6
+n=4
 data_file="./data/random_graphs.txt"
-solution_file="./data/tsp_solutions.txt"
+solution_file="./data/tsp_solutions_n={}.txt".format(n)
 
 graphs=graphs_decipher(data_file,n)
 print("graphs loaded...")
