@@ -3,19 +3,14 @@ import matplotlib.pylab as plt
 from numpy.random import rand
 
 '''
-use this script to generate N random graphs with n nodes
-
-the graph is a list of random 2-tuples, in form of {(x1,y1), (x2,y2)...}
-
-you can use the gen_graph() function to generate a single graphor run the code in the main() part to generate a long list of points
-
-you can extract the graph as a list from the saved file using graph_decipher() function
-
-saved in target file named as 'random_graph.csv' in current directory
+graph generator, this module is used to generate random benchmark data for QAOA and classical algorithm
 
 '''
 
 def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
+    '''
+    generate a random adjancet matrix    
+    '''
     adj_matrix=np.zeros((n,n))
     for i in range(n-1):
         for j in range(i+1,n):
@@ -29,15 +24,7 @@ def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
     return adj_matrix
 
 
-def generate_adj_matrix(N,n,save_file):
-    print("generating random adjancent matrix...")
-    data = []
-    for i in range(N):
-        data.append(gen_random_adjancent_matrix(n).flatten())
-    np.savetxt(save_file, np.array(data, dtype=int))
-
-    
-def gen_graph(n=6,scale=100):
+def gen_random_points(n,scale=100):
     '''
     n: number of vertices in the graph
     scale: scale factor of the graph, 100 as default
@@ -47,28 +34,6 @@ def gen_graph(n=6,scale=100):
     points=[(np.random.rand(),np.random.rand()) for i in range(n)]
     return scale*np.array(points)
 
-
-def graph_plot(graph):
-    '''
-    visualize the graph given by the gen_graph function
-    '''
-    X=graph[:,0]
-    Y=graph[:,1]
-    plt.scatter(X,Y)
-    plt.show()
-
-def graphs_decipher(target_file,n=6):
-    '''
-    extract graphs from a long randomly generated list of 2-tuples 
-    (saved in a file as 2-D numpy array) 
-
-    target_file: file name of the saved array
-    return a list of 2*n array
-    '''
-    data=np.loadtxt(target_file)
-    N=data.shape[0]//n
-    graphs=[data[i*n:(i+1)*n] for i in range(N)]
-    return graphs
 
 def get_distance_matrix(array):
     '''
@@ -88,26 +53,70 @@ def get_distance_matrix(array):
 
     return distance_matrix
 
-
-if __name__=='__main__':
-    n=6 # node number of graph
-    N=20 # number of graph generated
-    target_file="random_graphs.txt"
+#========================
     
-    test=True
-    print("generating graphs...")
-    
-    graphs=[]
+def gen_adj_matr_list(save_file,N,n):
+    '''
+    generate random adjancent matrix list and save to file
+    '''
+    print("generating random adjancent matrix...")
+    data = []
     for i in range(N):
-        graph=gen_graph(n)
-        graphs.append(graph)
-    print("finished!")
-
-    graphs=np.vstack(graphs)
-    np.savetxt(target_file,graphs)
-    print("graphs saved!")
+        data.append(gen_random_adjancent_matrix(n).flatten())
+    np.savetxt(save_file, np.array(data, dtype=int))
     
-    if test:
-        graph_plot(graphs_decipher(target_file)[0])
-        print("successfully extract graphs!")
+
+def gen_dist_matr_list(save_file,N,n,scale):
+    '''
+    generate random distance matrix list and save to file
+    '''
+    print("generating random distance matrix...")
+    data = []
+    for i in range(N):
+        data.append(get_distance_matrix(gen_random_points(n,scale)).flatten())
+    np.savetxt(save_file, np.array(data, dtype=int))
+    
+
+def decode_matrix_list(target_file,n):
+    '''
+    extract graphs from a long randomly generated list of 2-tuples 
+    (saved in a file as 2-D numpy array) 
+
+    target_file: file name of the saved array
+    return a list of 2*n array
+    '''
+    data=np.loadtxt(target_file)
+    N=data.shape[0]//n
+    graphs=[data[i,:].reshape((n,n)) for i in range(N)]
+    return graphs
+
+if __name__=="__main__":# test
+    
+    test_a=gen_random_points(6,100)
+    print(test_a)
+    print("a pass")
+    
+    test_b=gen_random_adjancent_matrix(5)
+    print(test_b)
+    print("b pass")
+    
+    test_c=get_distance_matrix(test_a)
+    print(test_c)
+    print("c pass")
+    
+    
+    n=6
+    
+    test_file1="test1.txt"
+    gen_adj_matr_list(test_file1,10,n)
+    
+    
+    test_file2="test2.txt"
+    gen_dist_matr_list(test_file2,10,n,100)
+    
+    
+    print(decode_matrix_list("test1.txt",n))
+    print("d pass")
+    print(decode_matrix_list("test2.txt",n))
+    
     

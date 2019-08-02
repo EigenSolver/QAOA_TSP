@@ -1,6 +1,6 @@
 import projectq as pq
 from projectq import MainEngine
-from projectq.ops import QubitOperator, Measure, All, H, TimeEvolution
+from projectq.ops import QubitOperator, Measure, All, H, X, TimeEvolution
 from projectq.meta import Loop
 
 import numpy as np
@@ -32,6 +32,7 @@ class QAOA(object):
     # just a sub function! not a method
     def default_ansatz(self, engine,n_qubits):
         ansatz = engine.allocate_qureg(n_qubits)
+        All(X) | ansatz # important- ground state!
         All(H) | ansatz
         return ansatz
     
