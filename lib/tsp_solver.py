@@ -1,4 +1,3 @@
-import numpy as np
 import itertools
 
 def held_karp(dists):

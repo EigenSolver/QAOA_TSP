@@ -1,15 +1,21 @@
 import numpy as np
-import matplotlib.pylab as plt
 from numpy.random import rand
 
 '''
-graph generator, this module is used to generate random benchmark data for QAOA and classical algorithm
+graph generator, this module is used to generate random matrix data for QAOA and classical algorithm
 
 '''
 
 def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
     '''
     generate a random adjancet matrix    
+    
+    Args:
+        n(int): dimension of the square matrix
+        symmetric(boolean): if the matrix is symmetric
+        threshold(int): connection probability
+    Returns:
+        adj_matrix(ndarray): an adjancent matrix
     '''
     adj_matrix=np.zeros((n,n))
     for i in range(n-1):
@@ -26,9 +32,11 @@ def gen_random_adjancent_matrix(n,symmetric=True,threshold=0.7):
 
 def gen_random_points(n,scale=100):
     '''
-    n: number of vertices in the graph
-    scale: scale factor of the graph, 100 as default
-    return: a n*2 2-d array, contains all the n vertices in the graph
+    Args:
+        n(int): number of vertices in the graph
+        scale(int): scale factor of the graph, 100 as default
+    Returns:
+        (ndarray):a n*2 2-d array, contains all the n vertices in the graph
     in a coordinate form (x,y)
     '''
     points=[(np.random.rand(),np.random.rand()) for i in range(n)]
@@ -38,7 +46,13 @@ def gen_random_points(n,scale=100):
 def get_distance_matrix(array):
     '''
     given a set of vertices of a graph in form of n*2 array (x,y)
-    return a n*n distance matrix for this graph (suppose it's all connected)
+    
+    Args:
+        array(ndarray): a n*2 2-d array, contains all the n vertices in the graph
+    in a coordinate form (x,y)
+    
+    Returns:
+        distance_matrix(ndarray): a n*n distance matrix for this graph (suppose it's all connected)
     '''
     def distance(p1,p2):
         return np.sqrt(np.sum((p1-p2)**2))
@@ -58,6 +72,13 @@ def get_distance_matrix(array):
 def gen_adj_matr_list(save_file,N,n):
     '''
     generate random adjancent matrix list and save to file
+    
+    Args:
+        save_file(str): path to save file
+        N(int): length of list
+        n(int): dimension of matrix
+    Returns:
+        None
     '''
     print("generating random adjancent matrix...")
     data = []
@@ -69,6 +90,14 @@ def gen_adj_matr_list(save_file,N,n):
 def gen_dist_matr_list(save_file,N,n,scale):
     '''
     generate random distance matrix list and save to file
+    
+    Args:
+        save_file(str): path to save file
+        N(int): length of list
+        n(int): dimension of matrix
+        scale(float): scaling ratio of distance
+    Returns:
+        None
     '''
     print("generating random distance matrix...")
     data = []
@@ -81,12 +110,13 @@ def decode_matrix_list(target_file,n):
     '''
     extract graphs from a long randomly generated list of 2-tuples 
     (saved in a file as 2-D numpy array) 
-
-    target_file: file name of the saved array
-    return a list of 2*n array
+    Args:
+        target_file(str): file name of the saved array
+    Returns:
+        graph(list): a list of 2*n array
     '''
     data=np.loadtxt(target_file)
-    N=data.shape[0]//n
+    N=data.shape[0]
     graphs=[data[i,:].reshape((n,n)) for i in range(N)]
     return graphs
 
@@ -106,17 +136,18 @@ if __name__=="__main__":# test
     
     
     n=6
+    N=3
     
     test_file1="test1.txt"
-    gen_adj_matr_list(test_file1,10,n)
+    gen_adj_matr_list(test_file1,N,n)
     
     
     test_file2="test2.txt"
-    gen_dist_matr_list(test_file2,10,n,100)
-    
+    gen_dist_matr_list(test_file2,N,n,100)
+    print("d pass")
     
     print(decode_matrix_list("test1.txt",n))
-    print("d pass")
+    print("e pass")
     print(decode_matrix_list("test2.txt",n))
     
     
