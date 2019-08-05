@@ -26,4 +26,3 @@ def report(n_iter,n_rate,n_all):
     '''
     if (n_iter+1)%n_rate==0:
         print("progress: {}/{}".format(n_iter+1,n_all))
-    

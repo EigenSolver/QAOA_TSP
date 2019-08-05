@@ -1,10 +1,6 @@
 # implement for a 2d numpy array, consider add support for networkx graph
 import numpy as np
-
-import projectq as pq
-from projectq import MainEngine
-from projectq.ops import All, Measure, QubitOperator, TimeEvolution, X, H
-
+from projectq.ops import QubitOperator
 
 def MAXCUT_Hamiltonian(adjancent_matrix,minimum=True):
     '''
