@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pandas as pd
 import networkx as nx
 from lib.maxcut_solver import goemans_williamson
@@ -9,8 +10,9 @@ from lib.random_graph_generator import gen_adj_matr_list, decode_matrix_list
 matrix_file = "./data/random_maxcut_matrix.txt"
 solution_file = "./data/classical_maxcut_solution.txt"
 
-N = 100
-n = 20
+N = 500
+n = 10
+tag = "_n={}_N={}".format(n,N)
 
 #%%
 # generate matrix

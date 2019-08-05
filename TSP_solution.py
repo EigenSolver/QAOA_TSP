@@ -12,6 +12,7 @@ solution_file = "./data/classical_tsp_solution.txt"
 N = 100
 n = 5
 scale=10
+tag = "_n={}_N={}".format(n,N)
 
 #%%
 # generate matrix

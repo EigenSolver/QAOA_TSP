@@ -22,8 +22,8 @@ solution_file="./data/qaoa_maxcut_solution"
 #%% set parameters
 
 p=2
-n=20
-N=10
+n=10
+N=20
 report_rate=2
 
 data=decode_matrix_list(matrix_file,n)[:N]
