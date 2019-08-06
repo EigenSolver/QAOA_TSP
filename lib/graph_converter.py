@@ -1,5 +1,6 @@
 # implement for a 2d numpy array, consider add support for networkx graph
 import numpy as np
+from sympy import expand
 from projectq.ops import QubitOperator
 
 
@@ -102,6 +103,10 @@ def TSP_Hamiltonian(distance_matrix):
     n = distance_matrix.shape[0]
 
     def index(u, i):
+        '''
+        i: step
+        u: city
+        '''
         return i*n+u
 
     def H_cross(i, j):
@@ -121,18 +126,68 @@ def TSP_Hamiltonian(distance_matrix):
     return H_cost
 
 
-def TSP_Ansatz(distance_matrix):
-    D = distance_matrix
 
     def H_ps(u, v, i, j):
         '''
         swap if reach city u at step i and reach city v and step j
         '''
-        pass
+        S_p(u,i)S_p()
+
+def TSP_Ansatz(distance_matrix):
+    D = distance_matrix
+    n = distance_matrix.shape[0]
+
+    def index(u, i):
+        '''
+        args i: step u: city
+        return index of i, u
+        '''
+        return i*n+u
+    
+    def S_p(u,i):
+        return QubitOperator("X{}".format(index(u, i)))+1j*QubitOperator("Y{}".format(index(u, i)))
+
+    def S_m(u,i):
+        return QubitOperator("X{}".format(index(u, i)))-1j*QubitOperator("Y{}".format(index(u, i)))
+
+
+def complete_graph_edge_coloring_cluster(n):
+    '''
+    from Vizing's theorem in graph theory
+    
+    for a complete graph, the degree of each node is n-1
+    there are n(n-1)/2 edges in the graph 
+    
+    if n is odd, there are n edge-coloring clusters, with (n-1)/2 edges in each cluster 
+    if n is even, there are n-1 edge-coloring clusters, with n/2 edges in each cluster 
+    
+    give a complete graph with n vitices, return a cluster contains 
+    
+    Args:
+        n(int): number of vertices in the graph
+    Return:
+        clusters(list): list of list(cluster) contains edges(tuple of 2-node) in the cluster
+    >>> complete_graph_edge_coloring_cluster(5)
+    [[(0, 1), (4, 2)], [(1, 2), (0, 3)], [(2, 3), (1, 4)], [(3, 4), (2, 0)], [(4, 0), (3, 1)]]
+    >>> complete_graph_edge_coloring_cluster(6)
+    [[(0, 1), (4, 2), (5, 3)], [(1, 2), (0, 3), (5, 4)], [(2, 3), (1, 4), (5, 0)], [(3, 4), (2, 0), (5, 1)], [(4, 0), (3, 1), (5, 2)]]
+    '''
+
+    clusters = []
+    if n % 2 == 1:
+        for i in range(n):
+            edges = []
+            for j in range((n-1)//2):
+                edges.append(((i-j) % n, (i+1+j) % n))
+            clusters.append(edges)
+    elif n % 2 == 0:
+        clusters = complete_graph_edge_coloring_cluster(n-1)
+        for i in range(n-1):
+            clusters[i].append((n-1, (i+n//2) % (n-1)))
+    return clusters
+
 
 # test for implementation
 if __name__=="__main__":
-#     # ===================================
-    print(TSP_Hamiltonian(np.array([[ 0.        , 63.66447662, 64.03085272],
-       [63.66447662,  0.        , 30.05756898],
-       [64.03085272, 30.05756898,  0.        ]])))
+    import doctest
+    doctest.testmod()
