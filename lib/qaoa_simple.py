@@ -37,7 +37,7 @@ class QAOA(object):
         H_mixer = 0*QubitOperator("")
         for i in range(self.__n_qubits):
             H_mixer += QubitOperator("X{}".format(i))
-        return H_mixer
+        return [H_mixer]
     
     def __prep_state(self, params):
         # extract beta & gamma
@@ -49,8 +49,8 @@ class QAOA(object):
         # evolution
         for i in range(self.__n_steps): # optimization
             TimeEvolution(gammas[i], self.__H_cost) | state
-            TimeEvolution(betas[i], self.__H_mixer) | state
-        
+            for H_mixer in self.__H_mixer:
+                TimeEvolution(betas[i], H_mixer) | state
         return state
     
     def __cost_expectation(self, params):
@@ -65,7 +65,7 @@ class QAOA(object):
         return expectation
 
 
-    def run(self,method="TNC"):#"COBYLA"
+    def run(self,method="COBYLA"):
         params0 = np.hstack((self.__init_betas, self.__init_gammas))
         bounds=[(0, np.pi) for i in range(self.__n_steps)]+[(0, 2*np.pi) for j in range(self.__n_steps)]
 

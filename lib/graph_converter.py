@@ -4,7 +4,7 @@ from sympy import expand
 from projectq.ops import QubitOperator
 
 
-def MAXCUT_Hamiltonian(adjancent_matrix, minimum=True):
+def MAXCUT_H_cost(adjancent_matrix, minimum=True):
     '''
     parameters
         adjancent_matrix: (2d numpy array)
@@ -27,7 +27,7 @@ def MAXCUT_Hamiltonian(adjancent_matrix, minimum=True):
         return (-1)*H_cost
 
 
-def Naive_TSP_Hamiltonian(distance_matrix, weight_matrix=None, penalty_coeff=None):
+def Naive_TSP_H_cost(distance_matrix, weight_matrix=None, penalty_coeff=None):
     '''
     parameters
         distance_matrix: (2d numpy array)
@@ -98,7 +98,7 @@ def Naive_TSP_Hamiltonian(distance_matrix, weight_matrix=None, penalty_coeff=Non
     return H_cost+H_penalty
 
 
-def TSP_Hamiltonian(distance_matrix):
+def TSP_H_cost(distance_matrix):
     D = distance_matrix
     n = distance_matrix.shape[0]
 
@@ -124,31 +124,6 @@ def TSP_Hamiltonian(distance_matrix):
             H_cost += D[u, v]*H_cross(index(u, 0), index(v, n-1))
 
     return H_cost
-
-
-
-    def H_ps(u, v, i, j):
-        '''
-        swap if reach city u at step i and reach city v and step j
-        '''
-        S_p(u,i)S_p()
-
-def TSP_Ansatz(distance_matrix):
-    D = distance_matrix
-    n = distance_matrix.shape[0]
-
-    def index(u, i):
-        '''
-        args i: step u: city
-        return index of i, u
-        '''
-        return i*n+u
-    
-    def S_p(u,i):
-        return QubitOperator("X{}".format(index(u, i)))+1j*QubitOperator("Y{}".format(index(u, i)))
-
-    def S_m(u,i):
-        return QubitOperator("X{}".format(index(u, i)))-1j*QubitOperator("Y{}".format(index(u, i)))
 
 
 def complete_graph_edge_coloring_cluster(n):
@@ -187,7 +162,122 @@ def complete_graph_edge_coloring_cluster(n):
     return clusters
 
 
+def TSP_H_mixers(n):
+    '''
+    Args:
+        n(int): size of problem
+    Return:
+        operators(list): list of unitary operators
+    '''
+    def index(u, i):
+        '''
+        args i: step u: city
+        return index of i, u
+        '''
+        return i*n+u
+
+    def H_swap(u, v, i, j):
+        '''
+        give four index where u,v denote cities in graph, and i,j denote step in tour
+        return swap Hamiltonian that swap the order of u and v, if u at i and j at v
+
+        Here we use Mathematica to expand the operator to X,Y gate composition 
+        and implement this formula in raw code
+
+        Args:
+            u,v(int): label of cities
+            i,j(int): label of steps
+        Return:
+            H_s(QubitOperator): four-bit operator, swap Hamiltonian
+        '''
+
+        add_label=lambda x: x.format(index(u, i), index(v, j), index(u, j), index(v, i))
+        term_list=\
+        '''- 1.0j, X{0} X{1} X{2} Y{3} 
+        - 1.0j, X{0} X{1} X{3} Y{2} 
+        + 1.0j, X{0} X{2} X{3} Y{1} 
+        - 1.0j, X{0} Y{1} Y{2} Y{3} 
+        + 1.0j, X{1} X{2} X{3} Y{0} 
+        - 1.0j, X{1} Y{0} Y{2} Y{3} 
+        + 1.0j, X{2} Y{0} Y{1} Y{3} 
+        + 1.0j, X{3} Y{0} Y{1} Y{2} 
+        + 1.0, X{0} X{1} X{2} X{3} 
+        - 1.0, X{0} X{1} Y{2} Y{3} 
+        + 1.0, X{0} X{2} Y{1} Y{3} 
+        + 1.0, X{0} X{3} Y{1} Y{2} 
+        + 1.0, X{1} X{2} Y{0} Y{3} 
+        + 1.0, X{1} X{3} Y{0} Y{2} 
+        - 1.0, X{2} X{3} Y{0} Y{1} 
+        + 1.0, Y{0} Y{1} Y{2} Y{3}'''
+
+        term_list = map(lambda x: x.split(","), term_list.split("\n"))
+        
+        H_s=0*QubitOperator("")
+        for term in term_list:
+            coeff=complex(term[0].replace(" ",""))
+            operator=QubitOperator(add_label(term[1]))
+            H_s+=coeff*operator
+
+        return H_s
+
+    def H_partial_swap(u, v, i, j):
+        return H_swap(u, v, i, j)+H_swap(u, v, j, i) # does order matter here??
+
+    def H_odd(pc):
+        '''
+        Args:
+            pc(list): list of 2-tuple, represent edges in same color
+        Return:
+            H(QubitOperator): operator that add all the partial mixer with even steps and cities in same color
+
+        '''
+        H=0*QubitOperator("")
+        if n%2:
+            for i in range(0,n-1,2):
+                for edge in pc:
+                    H+=H_partial_swap(edge[0],edge[1],i,i+1)
+        else:
+            for i in range(0,n,2):
+                for edge in pc:
+                    H+=H_partial_swap(edge[0],edge[1],i,i+1)
+        return H
+
+    def H_even(pc):
+        '''
+        Args:
+            pc(list): list of 2-tuple, represent edges in same color
+        Return:
+            H(QubitOperator): operator that add all the partial mixer with even steps and cities in same color
+        '''
+
+        H=0*QubitOperator("")
+        for i in range(1,n,2):
+            for edge in pc:
+                H+=H_partial_swap(edge[0],edge[1],i,i+1)
+        return H
+
+    def H_last(pc):
+        '''
+
+        '''
+        if n%2:
+            for edge in pc:
+                H=H_partial_swap(edge[0],edge[1],n-1,0)
+            return H
+        else:
+            return 1*QubitOperator("")
+
+    operators=[]
+    colors=complete_graph_edge_coloring_cluster(n)
+    for pc in colors:
+        operators.append(H_last(pc))
+        operators.append(H_even(pc))
+        operators.append(H_odd(pc))
+    return operators
+
 # test for implementation
 if __name__=="__main__":
     import doctest
     doctest.testmod()
+    from random_graph_generator import get_distance_matrix,gen_random_points
+    print(Naive_TSP_H_cost(get_distance_matrix(gen_random_points(3))))
