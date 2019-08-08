@@ -1,10 +1,66 @@
-# -*- coding: utf-8 -*-
-# implement for a 2d numpy array, consider add support for networkx graph
+'''
+module to provide all the necessary ansatz and mixer setting to implement operator ansatz
+'''
+
 import numpy as np
 from sympy import expand
 from projectq.ops import QubitOperator, TimeEvolution
-from lib.graph_converter import complete_graph_edge_coloring_cluster
 from projectq.ops import X
+
+def complete_graph_edge_coloring_cluster(n):
+    '''
+    from Vizing's theorem in graph theory
+    
+    for a complete graph, the degree of each node is n-1
+    there are n(n-1)/2 edges in the graph 
+    
+    if n is odd, there are n edge-coloring clusters, with (n-1)/2 edges in each cluster 
+    if n is even, there are n-1 edge-coloring clusters, with n/2 edges in each cluster 
+    
+    give a complete graph with n vitices, return a cluster contains 
+    
+    Args:
+        n(int): number of vertices in the graph
+    Return:
+        clusters(list): list of list(cluster) contains edges(tuple of 2-node) in the cluster
+    >>> complete_graph_edge_coloring_cluster(5)
+    [[(0, 1), (4, 2)], [(1, 2), (0, 3)], [(2, 3), (1, 4)], [(3, 4), (2, 0)], [(4, 0), (3, 1)]]
+    >>> complete_graph_edge_coloring_cluster(6)
+    [[(0, 1), (4, 2), (5, 3)], [(1, 2), (0, 3), (5, 4)], [(2, 3), (1, 4), (5, 0)], [(3, 4), (2, 0), (5, 1)], [(4, 0), (3, 1), (5, 2)]]
+    '''
+
+    clusters = []
+    if n % 2 == 1:
+        for i in range(n):
+            edges = []
+            for j in range((n-1)//2):
+                edges.append(((i-j) % n, (i+1+j) % n))
+            clusters.append(edges)
+    elif n % 2 == 0:
+        clusters = complete_graph_edge_coloring_cluster(n-1)
+        for i in range(n-1):
+            clusters[i].append((n-1, (i+n//2) % (n-1)))
+    return clusters
+
+
+def TSP_Ansatz(engine,n_qubits):
+    '''
+    Args:
+        engine(MainEngine): engine to run simulator
+        n_qubits(int): number of qubits, should be square for int
+    Return:
+        ansatz(Qureg): quantum register with diagnoal setting as ansatz of TSP
+    '''
+    assert np.sqrt(n_qubits)%1==0
+    n=int(np.sqrt(n_qubits))
+    index = lambda u,i: i*n+u  
+
+    ansatz=engine.allocate_qureg(n_qubits)
+    for i in range(n):
+        X|ansatz[index(i,i)]
+    
+    return ansatz
+
 
 def TSP_H_mixers(n):
     '''
@@ -68,17 +124,14 @@ def TSP_H_mixers(n):
             pc(list): list of 2-tuple, represent edges in same color
         Return:
             H(QubitOperator): operator that add all the partial mixer with even steps and cities in same color
-
         '''
         H=0*QubitOperator("")
-        if n%2:
-            for i in range(0,n-1,2):
-                for edge in pc:
-                    H+=H_partial_swap(edge[0],edge[1],i,i+1)
-        else:
-            for i in range(0,n,2):
-                for edge in pc:
-                    H+=H_partial_swap(edge[0],edge[1],i,i+1)
+
+        for i in range(0,n-(n%2),2):
+            for edge in pc:
+                H+=H_partial_swap(edge[0],edge[1],i,i+1)
+                
+        H.compress()
         return H
 
     def H_even(pc):
@@ -90,21 +143,22 @@ def TSP_H_mixers(n):
         '''
 
         H=0*QubitOperator("")
-        for i in range(1,n,2):
+        for i in range(1,n+(n%2)-1,2):
             for edge in pc:
                 H+=H_partial_swap(edge[0],edge[1],i,i+1)
+        
+        H.compress()
         return H
 
     def H_last(pc):
         '''
 
         '''
-        if n%2:
-            for edge in pc:
-                H=H_partial_swap(edge[0],edge[1],n-1,0)
-            return H
-        else:
-            return 1*QubitOperator("")
+        H=0*QubitOperator("")
+        for edge in pc:
+            H+=H_partial_swap(edge[0],edge[1],n-1,0)
+        H.compress()
+        return H
 
     operators=[]
     colors=complete_graph_edge_coloring_cluster(n)
@@ -114,43 +168,11 @@ def TSP_H_mixers(n):
         operators.append(H_odd(pc))
     return operators
 
+if __name__=="__main__":
+    from projectq_header import *
+    from projectq.ops import All, Measure
+    state=TSP_Ansatz(eng,16)
 
-def TSP_Ansatz(engine,n_qubits):
-    '''
-    Args:
-        engine(MainEngine): engine to run simulator
-        n_qubits(int): number of qubits
-    Return:
-        ansatz(Qureg): quantum register with diagnoal setting as ansatz of TSP
-    '''
-    assert np.sqrt(n_qubits)%1==0
-    n=int(np.sqrt(n_qubits))
-    index = lambda u,i: i*n+u  
-
-    ansatz=engine.allocate_qureg(n_qubits)
-    for i in range(n):
-        X|ansatz[index(i,i)]
-    
-    return ansatz
-
-
-
-# if __name__=="__main__":
-#     n=3
-#     # print(H_swap(1,3,4,5))
-#     # print(H_partial_swap(1,3,4,5))
-#     from lib.projectq_header import *
-#     from projectq.ops import X, All, Measure,TimeEvolution
-#     state=eng.allocate_qureg(16)
-
-#     n=4
-#     X|state[index(0,0)]
-#     X|state[index(3,1)]
-#     X|state[index(1,2)]
-#     X|state[index(2,3)]
-
-#     H_partial_swap(3,1,1,2)|state
-#     All(Measure) | state
-#     eng.flush()
-
-#     print([int(x) for x in state])
+    eng.flush()
+    All(Measure)|state
+    print([int(x) for x in state])

@@ -1,4 +1,49 @@
 import itertools
+import numpy as np
+
+
+def tsp_cost(conf,dist_matrix):
+    '''
+    Args:
+        conf(list): list of cities, ordered natrually
+        dist_matrix(2darray): distance matrix
+    Returns:
+        cost(float): cost function
+        
+    >>> dist_m=np.array([[ 0.        , 90.51313794, 62.86696471, 50.75077802, 82.14307135],\
+       [90.51313794,  0.        , 44.41743947, 91.82705138,  8.81303117],\
+       [62.86696471, 44.41743947,  0.        , 48.06290502, 40.26546524],\
+       [50.75077802, 91.82705138, 48.06290502,  0.        , 86.38368889],\
+       [82.14307135,  8.81303117, 40.26546524, 86.38368889,  0.        ]])
+    >>> conf=[4,2,1,3,0]
+    >>> tsp_cost(conf,dist_m)
+    309.40380546
+    '''
+    cost=0
+    for i in range(len(conf)-1):
+        cost+=dist_matrix[conf[i],conf[i+1]]
+    cost+=dist_matrix[conf[0],conf[-1]]
+    return cost
+
+def tsp_bits_convert(bitstring):
+    '''
+    Args:
+        bitstring(array): iterable of 0/1 bits
+    Returns:
+        configuration(list): list of ints, solution of tsp
+    
+    >>> tsp_bits_convert([0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,1])
+    [1, 0, 2, 3]
+    '''
+    n=np.sqrt(len(bitstring))
+    assert n%1==0
+    n=int(n)
+    
+    conf=[]
+    mark=np.arange(n)
+    for i in range(n):
+        conf.append(np.sum(mark*bitstring[i*n:(i+1)*n]))
+    return conf
 
 def held_karp(dists):
     """
@@ -10,6 +55,7 @@ def held_karp(dists):
         dists: distance matrix
     Returns:
         A tuple, (cost, path).
+    
     """
     n = len(dists)
 
@@ -66,14 +112,16 @@ def held_karp(dists):
 
 
 if __name__=='__main__':
-    from matplotlib.pylab import imshow
-    from lib.random_graph_generator import get_distance_matrix,gen_graph, graph_plot,graphs_decipher
-    
-    g=gen_graph(10)
-    # graph_plot(g)
-    m=get_distance_matrix(g)
-    # print(m)
-    
-    # graphs_decipher()
-    sol=held_karp(m)
-    print(sol)
+#    from matplotlib.pylab import imshow
+#    from lib.random_graph_generator import get_distance_matrix,gen_graph, graph_plot,graphs_decipher
+#    
+#    g=gen_graph(10)
+#    # graph_plot(g)
+#    m=get_distance_matrix(g)
+#    # print(m)
+#    
+#    # graphs_decipher()
+#    sol=held_karp(m)
+#    print(sol)
+    import doctest
+    doctest.testmod()
