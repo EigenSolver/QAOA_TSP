@@ -14,7 +14,7 @@ from lib.projectq_header import * # eng is initialized!
 
 print('compiler engine initialization...')
 
-matrix_file="./data/random_maxcut_matrix.txt"
+matrix_file="./data/random_maxcut_matrix"
 solution_file="./data/qaoa_maxcut_solution"
 
 

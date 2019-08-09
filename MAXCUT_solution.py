@@ -7,8 +7,8 @@ from lib.random_graph_generator import gen_adj_matr_list, decode_matrix_list
 
 #%%
 # set params
-matrix_file = "./data/random_maxcut_matrix.txt"
-solution_file = "./data/classical_maxcut_solution.txt"
+matrix_file = "./data/random_maxcut_matrix"
+solution_file = "./data/classical_maxcut_solution"
 
 N = 500
 n = 10

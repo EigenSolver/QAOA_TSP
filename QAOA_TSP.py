@@ -14,8 +14,8 @@ from lib.projectq_header import * # eng is initialized!
 
 print('compiler engine initialization...')
 
-matrix_file="./data/random_tsp_matrix_n=4_N=100.txt"
-solution_file="./data/qaoa_tsp_solution_n=4_N=100.txt"
+matrix_file="./data/random_tsp_matrix_n=4_N=100"
+solution_file="./data/qaoa_tsp_solution_n=4_N=100"
 
 
 
@@ -24,7 +24,7 @@ solution_file="./data/qaoa_tsp_solution_n=4_N=100.txt"
 p=1
 n=4
 n_qubits=n**2
-N=100
+N=10
 report_rate=1
 n_sampling=10
 data=decode_matrix_list(matrix_file,n)[:N]
