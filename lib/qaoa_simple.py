@@ -148,7 +148,8 @@ class QAOA(object):
             All(Measure)|state
             self.__engine.flush()
             if self.__n_sampling:
-                cost=self.__cost_eval([int(qb) for qb in state])
+                conf=[int(qb) for qb in state]
+                cost=self.__cost_eval(conf)
             else:
                 cost=self.__engine.backend.get_expectation_value(self.__H_cost,state)
             
@@ -156,8 +157,8 @@ class QAOA(object):
                 self.__min_cost=cost
             elif self.__min_cost>cost:
                 self.__min_cost=cost
-                self.__solution=[int(qb) for qb in state]
+                self.__solution=conf
             del state
-        
+            
         return (self.__solution,self.__min_cost)
 

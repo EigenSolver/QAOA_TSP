@@ -24,13 +24,14 @@ solution_file="./data/qaoa_tsp_solution_n=4_N=100.txt"
 p=1
 n=4
 n_qubits=n**2
-N=1
+N=100
 report_rate=1
 n_sampling=10
 data=decode_matrix_list(matrix_file,n)[:N]
 
 
 opt_method="COBYLA"
+opt_option={'maxiter': 100}
 tag="_n={0}_p={1}_method={2}".format(n,p,opt_method)
 
 # %%
@@ -45,17 +46,17 @@ for i in range(N):
     cost_func=lambda x: tsp_cost(tsp_bits_convert(x),matr)
     
     
-    qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=n_sampling,cost_eval=cost_func,verbose=True)# apply operator ansatz
+    qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=0,cost_eval=cost_func,verbose=True)# apply operator ansatz
 
     # qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p) #naive version
 
-    qaoa.run(method=opt_method,options={'maxiter': 50, 'tol':0.3})
+    qaoa.run(method=opt_method,options=opt_option)
     
     param=qaoa.result.x
     evaluate_cost=qaoa.result.fun
     
     n_iter=qaoa.result.nfev
-    conf, cost=qaoa.get_solution(draw=n_sampling)
+    conf, cost=qaoa.get_solution(draw=20)
     
     solution.append([param, conf, cost, evaluate_cost, n_iter])
     report(i,report_rate,N)
