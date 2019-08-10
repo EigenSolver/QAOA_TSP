@@ -4,7 +4,7 @@
 import pandas as pd
 
 from lib.random_graph_generator import decode_matrix_list
-from lib.graph_converter import MAXCUT_Hamiltonian
+from lib.graph_converter import MAXCUT_H_cost
 from lib.qaoa_simple import QAOA
 from lib.utilities import timer, report
 
@@ -39,7 +39,7 @@ print("maxcut with "+tag)
 
 solution=[]
 for i in range(N):
-    H_cost=MAXCUT_Hamiltonian(data[i])
+    H_cost=MAXCUT_H_cost(data[i])
     
     qaoa=QAOA(eng,H_cost,n,n_steps=p)
     qaoa.run(method=opt_method)

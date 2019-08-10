@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from projectq.ops import QubitOperator, Measure, All, H, X, TimeEvolution
 import numpy as np
 from scipy.optimize import minimize
@@ -39,7 +41,7 @@ class QAOA(object):
         
         # ensure cost_eval is given if sampling result
         
-        self.__n_sampling = n_sampling
+        self.n_sampling = n_sampling
         self.__cost_eval = cost_eval
             
  
@@ -61,7 +63,7 @@ class QAOA(object):
             H_mixer += QubitOperator("X{}".format(i))
         return [H_mixer]
     
-    def __prep_state(self, params):
+    def prep_state(self, params):
         # extract beta & gamma
         betas = params[:self.__n_steps]
         gammas = params[self.__n_steps:]
@@ -75,23 +77,23 @@ class QAOA(object):
                 TimeEvolution(betas[i], H_mixer) | state
         return state
     
-    def __cost_expectation(self, params):
+    def cost_expectation(self, params):
         '''
         tricky part 
         '''
 
         # on real quantum device, we can only obtain the expectation of an Hamiltonian via sampling measurements!
-        if self.__n_sampling:
+        if self.n_sampling:
             expectation = 0
-            for i in range(self.__n_sampling):
-                state=self.__prep_state(params)
+            for i in range(self.n_sampling):
+                state=self.prep_state(params)
                 All(Measure)|state
                 self.__engine.flush()
-                expectation+=self.__cost_eval([int(qb) for qb in state])/self.__n_sampling
+                expectation+=self.__cost_eval([int(qb) for qb in state])/self.n_sampling
                 del state
                 
         else:
-            state=self.__prep_state(params)
+            state=self.prep_state(params)
             self.__engine.flush()
             expectation = self.__engine.backend.get_expectation_value(self.__H_cost, state)
             All(Measure) | state
@@ -108,7 +110,7 @@ class QAOA(object):
         params0 = np.hstack((self.__init_betas, self.__init_gammas))
         bounds=[(0, np.pi) for i in range(self.__n_steps)]+[(0, 2*np.pi) for j in range(self.__n_steps)]
 
-        self.__result=minimize(self.__cost_expectation, \
+        self.__result=minimize(self.cost_expectation, \
             params0, method=method,bounds=bounds,options=options)
         return self.__result
     
@@ -140,15 +142,15 @@ class QAOA(object):
         self.__min_cost=None
         self.__solution=[]
         
-        if self.__n_sampling:
-            draw=self.__n_sampling # replace default parameter
+        if self.n_sampling:
+            draw=self.n_sampling # replace default parameter
         
         for i in range(draw):
-            state=self.__prep_state(params)
+            state=self.prep_state(params)
             All(Measure)|state
             self.__engine.flush()
-            if self.__n_sampling:
-                conf=[int(qb) for qb in state]
+            conf=[int(qb) for qb in state]
+            if self.n_sampling:
                 cost=self.__cost_eval(conf)
             else:
                 cost=self.__engine.backend.get_expectation_value(self.__H_cost,state)
@@ -159,6 +161,6 @@ class QAOA(object):
                 self.__min_cost=cost
                 self.__solution=conf
             del state
-            
+        
         return (self.__solution,self.__min_cost)
 
