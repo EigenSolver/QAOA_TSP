@@ -147,8 +147,8 @@ class QAOA(object):
             state=self.__prep_state(params)
             All(Measure)|state
             self.__engine.flush()
+            conf=[int(qb) for qb in state]
             if self.__n_sampling:
-                conf=[int(qb) for qb in state]
                 cost=self.__cost_eval(conf)
             else:
                 cost=self.__engine.backend.get_expectation_value(self.__H_cost,state)
