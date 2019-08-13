@@ -23,7 +23,8 @@ solution_file="./data/qaoa_maxcut_solution"
 
 p=2
 n=10
-N=20
+N=100
+n_sampling=20
 report_rate=2
 
 data=decode_matrix_list(matrix_file,n)[:N]
@@ -46,8 +47,8 @@ for i in range(N):
     param=qaoa.result.x
     evaluate_cost=qaoa.result.fun
     
-    n_iter=qaoa.result.nit or qaoa.result.fev or qaoa.result.fev 
-    conf, cost=qaoa.get_solution
+    n_iter=qaoa.result.nfev
+    conf, cost=qaoa.get_solution(draw=n_sampling)
     
     solution.append([param, conf, cost, evaluate_cost, n_iter])
     report(i,report_rate,N)
@@ -58,7 +59,6 @@ pd.DataFrame(solution,columns=["opt_param", "final_state", "cost", "mean_cost", 
 
 #%%
 
-#def maxcut_qaoa_solver(data_file,solution_file,p,report_rate=10,method="TNC"):
 
 
 

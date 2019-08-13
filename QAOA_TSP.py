@@ -26,7 +26,7 @@ n=4
 n_qubits=n**2
 N=20
 report_rate=1
-n_sampling=10
+n_sampling=50
 data=decode_matrix_list(matrix_file,n)[:N]
 
 
@@ -39,12 +39,17 @@ print("tsp with "+tag)
 
 
 solution=[]
+<<<<<<< HEAD
 with open(solution_file, "w") as f:
+=======
+with open(solution_file, "w") as f: # write in time!
+>>>>>>> 6e63c8a0966312d704cf654e1c31dc210a1c2382
     for i in range(N):
         matr=data[i]
         H_cost=TSP_H_cost(matr)
         H_mixer=TSP_H_mixers(n)
         cost_func=lambda x: tsp_cost(tsp_bits_convert(x),matr)
+<<<<<<< HEAD
         
         
         # qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=0,cost_eval=cost_func,verbose=True)# apply operator ansatz
@@ -62,6 +67,23 @@ with open(solution_file, "w") as f:
         
         solution.append([param, conf, cost, evaluate_cost, n_iter])
         f.write(str(solution[-1])+"\n")
+=======
+        qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=0,cost_eval=cost_func,verbose=True)# apply operator ansatz
+
+        # qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p) #naive version
+
+        qaoa.run(method=opt_method,options=opt_option)
+
+        param=qaoa.result.x
+        evaluate_cost=qaoa.result.fun
+
+        n_iter=qaoa.result.nfev
+        conf, cost=qaoa.get_solution(draw=20)
+
+        solution.append([param, conf, cost, evaluate_cost, n_iter])
+        f.write(str([i, param, conf, cost, evaluate_cost, n_iter])+"\n")
+
+>>>>>>> 6e63c8a0966312d704cf654e1c31dc210a1c2382
         report(i,report_rate,N)
     
 #%%
