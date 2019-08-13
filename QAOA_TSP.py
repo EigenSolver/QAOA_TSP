@@ -26,12 +26,12 @@ n=4
 n_qubits=n**2
 N=100
 report_rate=1
-n_sampling=10
+n_sampling=50
 data=decode_matrix_list(matrix_file,n)[:N]
 
 
 opt_method="COBYLA"
-opt_option={'maxiter': 100}
+opt_option={'maxiter': 100, 'tol': 0.1}
 tag="_n={0}_p={1}_method={2}".format(n,p,opt_method)
 
 # %%
@@ -39,27 +39,28 @@ print("tsp with "+tag)
 
 
 solution=[]
-for i in range(N):
-    matr=data[i]
-    H_cost=TSP_H_cost(matr)
-    H_mixer=TSP_H_mixers(n)
-    cost_func=lambda x: tsp_cost(tsp_bits_convert(x),matr)
-    
-    
-    qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=0,cost_eval=cost_func,verbose=True)# apply operator ansatz
+with open(solution_file, "w") as f: # write in time!
+    for i in range(N):
+        matr=data[i]
+        H_cost=TSP_H_cost(matr)
+        H_mixer=TSP_H_mixers(n)
+        cost_func=lambda x: tsp_cost(tsp_bits_convert(x),matr)
+        qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p,H_mixer=H_mixer,ansatz_func=TSP_Ansatz,n_sampling=0,cost_eval=cost_func,verbose=True)# apply operator ansatz
 
-    # qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p) #naive version
+        # qaoa=QAOA(eng,H_cost,n_qubits,n_steps=p) #naive version
 
-    qaoa.run(method=opt_method,options=opt_option)
-    
-    param=qaoa.result.x
-    evaluate_cost=qaoa.result.fun
-    
-    n_iter=qaoa.result.nfev
-    conf, cost=qaoa.get_solution(draw=20)
-    
-    solution.append([param, conf, cost, evaluate_cost, n_iter])
-    report(i,report_rate,N)
+        qaoa.run(method=opt_method,options=opt_option)
+
+        param=qaoa.result.x
+        evaluate_cost=qaoa.result.fun
+
+        n_iter=qaoa.result.nfev
+        conf, cost=qaoa.get_solution(draw=20)
+
+        solution.append([param, conf, cost, evaluate_cost, n_iter])
+        f.write(str([i, param, conf, cost, evaluate_cost, n_iter])+"\n")
+
+        report(i,report_rate,N)
     
 #%%
 print("saving data...")
