@@ -14,8 +14,9 @@ from lib.projectq_header import * # eng is initialized!
 
 print('compiler engine initialization...')
 
-matrix_file="./data/random_tsp_matrix_n=4_N=100"
-solution_file="./data/qaoa_tsp_solution_Naive"
+postfix="_n=4_N=100"
+matrix_file="./data/random_tsp_matrix"+postfix
+solution_file="./data/qaoa_tsp_solution"
 
 
 
@@ -27,12 +28,16 @@ n_qubits=n**2
 N=20
 report_rate=1
 n_sampling=50
-data=decode_matrix_list(matrix_file,n)[:N]
+
+data=decode_matrix_list(matrix_file,n)
+assert N<=len(data)
+data=data[:N]
 
 
 opt_method="COBYLA"
 opt_option={'maxiter': 100, 'tol': 0.1}
-tag="_n={0}_p={1}_method={2}".format(n,p,opt_method)
+
+tag="_n={0}_N={1}_p={2}_method={3}".format(n,N,p,opt_method)
 
 # %%
 print("tsp with "+tag)

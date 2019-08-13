@@ -27,11 +27,15 @@ N=100
 n_sampling=20
 report_rate=2
 
-data=decode_matrix_list(matrix_file,n)[:N]
+data=decode_matrix_list(matrix_file,n)
+assert N<=len(data)
+data=data[:N]
 
 
 opt_method="COBYLA"
-tag="_n={0}_p={1}_method={2}".format(n,p,opt_method)
+opt_option={'maxiter': 100, 'tol': 0.1}
+tag="_n={0}_N={1}_p={2}_method={3}".format(n,N,p,opt_method)
+
 
 # %%
 print("maxcut with "+tag)
@@ -42,7 +46,7 @@ for i in range(N):
     H_cost=MAXCUT_H_cost(data[i])
     
     qaoa=QAOA(eng,H_cost,n,n_steps=p)
-    qaoa.run(method=opt_method)
+    qaoa.run(method=opt_method,options=opt_option)
     
     param=qaoa.result.x
     evaluate_cost=qaoa.result.fun
