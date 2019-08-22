@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
 
-
 import pandas as pd
 
 from lib.random_graph_generator import decode_matrix_list
 from lib.graph_converter import MAXCUT_H_cost
-from lib.qaoa import QAOA
+# from lib.qaoa import QAOA
 from lib.utilities import timer, report
 
 # %% initialize engine
-
+from QAOA_LIB.qaoa.backends.qaoa import QAOA
 from lib.projectq_header import *  # eng is initialized!
 
 print('compiler engine initialization...')
