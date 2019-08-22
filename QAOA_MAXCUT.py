@@ -5,7 +5,7 @@ import pandas as pd
 
 from lib.random_graph_generator import decode_matrix_list
 from lib.graph_converter import MAXCUT_H_cost
-from lib.qaoa_simple import QAOA
+from lib.qaoa import QAOA
 from lib.utilities import timer, report
 
 # %% initialize engine

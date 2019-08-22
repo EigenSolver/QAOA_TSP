@@ -5,7 +5,7 @@ from lib.random_graph_generator import decode_matrix_list
 from lib.graph_converter import TSP_H_cost
 from lib.operator_ansatz import TSP_H_mixers, TSP_Ansatz
 from lib.tsp_solver import tsp_cost, tsp_bits_convert
-from lib.qaoa_simple import QAOA
+from lib.qaoa import QAOA
 from lib.utilities import timer, report
 
 # %% initialize engine
