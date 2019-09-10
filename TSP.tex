@@ -1,0 +1,182 @@
+\documentclass[aps,pra,twocolumn,superscriptaddress]{revtex4-2}
+
+\usepackage{graphicx}
+\usepackage{dcolumn}
+\usepackage{bm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage[breaklinks]{hyperref}
+\usepackage{breakurl}
+
+\newif\ifhyper
+\hypertrue
+\ifhyper
+\hypersetup{
+   citecolor = {green},
+   colorlinks = {true},
+   urlcolor = {blue}
+}
+\fi
+
+\hyphenation{ALPGEN}
+\hyphenation{EVTGEN}
+\hyphenation{PYTHIA}
+
+\usepackage{color}
+\usepackage{soul}
+
+
+\begin{document}
+
+\title{QAOA versus Quantum Annealing on Traveling Salesman Problem}
+
+\author{...}
+\author{Yongcheng Ding}
+\email{jonzen.ding@gmail.com}
+\affiliation{International Center of Quantum Artificial Intelligence for Science and Technology (QuArtist) \\ and Department of Physics, Shanghai University, 200444 Shanghai, China}
+\affiliation{Department of Physical Chemistry, University of the Basque Country UPV/EHU, Apartado 644, 48080 Bilbao, Spain}
+\author{...}
+
+\date{\today}
+
+
+\begin{abstract}
+to be written at the end
+\end{abstract}
+
+\maketitle
+\section{Introduction}
+to be written at the end
+\section{Model\label{sec:model}}
+Here we introduce Traveling Salesman Problem (TSP), as the benchmark problem in this paper. TSP sets the goal of answering the following question: what is the most economical route for a traveling salesman that visits each sites only once and returns to the starting point. This combinatorial optimization problem is proved to be NP-hard, which is notorious for its difficulty to be solved exactly. Even the verification version of TSP, i.e. , checking if there exists any better solution than a given one, is NP-complete. The simplest TSP would be an undirected complete graph, where each edge is weighed by the distance between its nodes. This model could be extended to more complicated cases, e.g., the nodes are not fully connected, or the graph is oriented. Suppose that there are $n$ sites in a $d$-dimensional space $\mathcal{R}^d$, the distance $d_{ij}$ between site $i$ and $j$ is defined by a certain metric. A weight coefficient $w_{ij}$ represents the cost for a unit distance of $d_{ij}$, which allows asymmetry of the graph. One can encode the configuration of an arbitrary solution by $n\times n$ binary variables $x_{i,s}$, where $x_{i,s}=1$ or $0$ means "site $i$ is/isnot visited at step $s$" . The solution is constrained in these ways: (\romannumeral1) only one site can be visited in a single step; (\romannumeral2) all sites should be visited for only one time in the route.
+
+Accordingly, TSP can be formulated as a 0-1 programming problem for minimizing the total cost
+\begin{equation}
+\label{eq:cost}
+\text{cost}(x_{i,s})=\sum_{i,j,s}^n d_{ij}w_{ij}x_{i,s}x_{k,s+1},
+\end{equation}
+\begin{equation}
+\label{eq:column}
+\text{s.t.}\ \sum_i^n x_{i,s}=1\ \text{for all $s$},
+\end{equation}
+\begin{equation}
+\label{eq:row}
+\ \ \ \ \ \sum_s^n x_{i,s}=1\ \text{for all $i$},
+\end{equation}
+\begin{equation}
+\label{eq:periodic}
+\ \ \ \ \ x_{i,1}=x_{i,n+1}\ \text{for all $i$}.
+\end{equation}
+A periodic boundary condition Eq.~\eqref{eq:periodic} takes the cost for traveling from the last site to the starting point into consideration without introducing extra binary variables. Since the problem is NP-hard, the computing time of any classical algorithm for the worst scenario increases exponentially with the number of sites. 
+
+\section{Quantum Optimization Algorithm}
+For problems that cannot be solved by classical algorithms efficiently, quantum computing is applied to speed up the calculation by the principle of quantum mechanics. Among all quantum algorithms, there are quantum optimization algorithms that minimize a given cost function, where is modeled by a combinational optimization problem in this paper. The core idea is that, one may substitute an arbitrary  classical binary variable $x$ by qubit operator $\hat{q}$ with eigenvalues of $0$ and $1$, i.e., $\hat{q}|0\rangle=0$ and $\hat{q}|1\rangle=1$ and accelerate the calculation by superpositions and coherence. In this way, the cost function is transformed to a problem Hamiltonian, where its ground state gives the global minimum.
+\subsection{Problem Hamiltonian}
+As we mentioned in Sec.~\ref{sec:model}, the configuration of a certain solution can be encoded by $n\times n$ binary variables, which requires at least the same amount of qubits for the implementation in a quantum computing platform. Much more computational resource can be included as ancilla qubits for achieving error-correction or qubits are not connected according to the graph structure of the problem Hamiltonian.
+
+The problem Hamiltonian can be constructed by additional quadric penalty terms with adequate penalty strengths that represent constraint conditions. For a TSP, the total cost can be translated to a sub-Hamiltonian with the combination of Eq.~\eqref{eq:cost} and~\eqref{eq:periodic}
+\begin{equation}
+H_{\text{cost}}=\sum_{i=1}^n\sum_{j=1}^n\sum_{s=1}^{n-1}d_{ij}w_{ij}\hat{q}_{i,s}\hat{q}_{j,s+1}+\sum_{i=1}^n\sum_{j=1}^nd_{ij}w_{ij}\hat{q}_{i,1}\hat{q}_{j,n},
+\end{equation}
+where qubit operator $\hat{q}_{i,s}$ denotes the status of site $i$ in step $s$. Constraint conditions Eq.~\eqref{eq:column} and~\eqref{eq:row} can be expressed by penalty terms
+\begin{equation}
+H_{\text{penalty}}=\sum_{s=1}^n\lambda_s(\sum_{i=1}^n\hat{q}_{i,s}-1)^2+\sum_{i=1}^n\mu_i(\sum_{s=1}^n\hat{q}_{i,s}-1)^2,
+\end{equation}
+where penalty strength $\lambda_s$ and $\mu_i$ should ensure that any action that violates the constraint conditions will lead to a penalty larger than the reward from the total cost. Hence, the problem Hamiltonian can be given by $H_{\text{P}}=H_{\text{cost}}+H_{\text{penalty}}$, with its ground state to be the global minimum we want to obtain by quantum optimization algorithms.
+
+\subsection{Quantum Approximated Optimization Algortithm}
+We briefly review Farhi's original protocol of QAOA before our mapping. QAOA is an approximated algorithm based on quantum circuit for combinatorial optimization problem, e.g., MAXCUT, MAX-2-SAT, etc. To be more specific, this algorithm maximize a cost function $C(z)$, where $z=z_1z_2\cdots z_n$ is a bit string with $z_i=\pm1$ approximately via a sequence of unitary operators. Once we choose the computational basis vector $|z\rangle$, two unitary operators can be defined by $U(B,\beta)=\exp(-i\beta B)$ and  $U(C,\gamma)=\exp(-i\gamma C)$, where $B=\sum_i^n \sigma_x$ is the sum of $n$ Pauli-X operators. Angle $\beta$ and $\gamma$ as independent parameters in $[0,2\pi]$ and $[0,pi]$, respectively. The initial state is prepared to be a uniform superposition $|s\rangle=|+_i+_2\cdots+_n\rangle$, which is the ground state of $B$. An angle dependent quantum state can be evolved according to $2p$ unitary operators
+\begin{equation}
+|\beta,\gamma\rangle=U(B,\beta_p)U(C,\gamma_p)\cdots U(B,\beta_1)U(C,\gamma_1)|s\rangle,
+\end{equation}
+where the expectation value of C can be measured by $F_p=\langle\beta,\gamma|C|\beta,\gamma\rangle$. For a fixed accuracy $p$, the set of angles $(\beta,\gamma)$ can be altered to obtain a better $F_p$. The maximum value of $F_p$ is always larger than that of $F_{p-1}$, and when $p\rightarrow\infty$, this algorithm gives an exact global maximum.
+
+For solving TSP by QAOA, the problem Hamiltonian should be reformulated to fit this protocol. Since the problem Hamiltonian $C$ for QAOA is a spin-1/2 Hamiltonian, qubit operators can be substituted by Pauli-Z operators with $\hat{q}_{i,s}=(1+\hat{\sigma}_{i,s}^z)/2$. The spin-1/2 Hamiltonian $H_{\text{spin}}$ is to be minimized, while QAOA is designed for maximize the problem Hamiltonian $C$. An effective problem Hamiltonian to be maximized can be generated by $C=-H_{\text{spin}}$.
+
+\subsection{Quantum Annealing}
+Quantum annealing is another approach to accelerate computation of specific problems by the principle of quantum mechanics. A more precise description of the algorithm would be adiabatic quantum computation (AQC), where a quantum system is initially prepared to the ground state of a simple Hamiltonian and then adiabatically evolved to the problem Hamiltonian. The system is supposed to be in the ground state of the problem Hamiltonian at the end, which is guaranteed by the adiabatic theorem. The estimation of evolving time $t_f=O(1/\text{gap}^2_{\min})$ is governed by the minimal energy gap of the problem Hamiltonian. The Hamiltonian of the quantum system can be written as
+\begin{equation}
+\label{eq:H_2D}
+H(t)=-A(\frac{t}{t_f})\sum_i^n\hat{\sigma}_i^x+B(\frac{t}{t_f})H_{\text{spin}},
+\end{equation}
+where $A(\frac{t}{t_f})$ smoothly evolves from $A(0)$ to negligible and $B(\frac{t}{t_f})$ grows reversely to $B(1)$. 
+
+However, AQC cannot be achieved easily for the following reasons: (\romannumeral1) one need to find $\text{gap}_{\min}$ of the problem Hamiltonian for ensuring an adiabatic evolution, which is equivalent to find the ground state of it; (\romannumeral2) even if the evolution of time can be given in advance, decoherence and noise can affect the performance of the algorithm massively. Thus, quantum annealing accelerate the evolution by tunneling the traverse magnetic field faster, which reduces the computing time. The quantum system can be excited to a higher energy state during the process, but still remains a relative high possibility of obtaining a ground state of the problem Hamiltonian once the initial traverse magnetic field is switched off. Following this idea, quantum annealer as computing platform has been built by concluding the global minimum with statistical methods.
+
+
+\section{Experiments}
+\subsection{HiQ simulator}
+38 qubits
+\subsection{IBM/Rigetti cloud quantum computer}
+to be decided by Kike
+\subsection{Quantum annealer simulator}
+Before we test the the performance of quantum annealing on quantum computing platform, we simulate the process by a classical device for a better understanding of the algorithm. Even though D-Wave provides local solver in the software, it does not simulate the evolution of a quantum system but solves the effective 0-1 programming problem with classical algorithm instead, e.g., tabu search for the local server in \textit{qbsolv}. Since the problem Hamiltonian for TSP problem is stoquastic, i.e., free from sign problem, we apply Path-Integral Quantum Monte Carlo Method (PIQMC)~\cite{path_integral} to simulate the D-Wave quantum annealer. The algorithm allows finite but small temperature for simulating quantum tunneling, and gives a coarse population for each eigenstate without exactly simulation of its dynamics. In Appendix.~\ref{app:QMC}, we introduce the algorithm amply by providing its principle and technical details for implementing.
+
+
+
+
+
+\subsection{D-Wave quantum annealer}
+D-Wave 2000Q
+
+\section{Discussion}
+comparison with DP
+
+Potential enhancements
+\section{Conclusion}
+to be written at the end
+\section{Acknowledgments}
+We acknowledge funding from projects QMiCS (820505) and OpenSuperQ (820363) of the EU Flagship on Quantum Technologies,  Spanish Government PGC2018-095113-B-I00 (MCIU/AEI/FEDER, UE), Basque Government IT986-16, Shanghai Municipal Science and Technology Commission (18010500400 and 18ZR1415500), and the Shanghai Program for Eastern Scholar, as well as the and EU FET Open Grant Quromorphic. This work is supported by the U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research (ASCR) quantum algorithm teams program, under field work proposal number ERKJ333.
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{path_integral} R. Marto\v{n}\'ak, G. E. Santoro, and E. Tosatti, Phys. Rev. B \textbf{66}, 094203 (2002).
+\bibitem{codes}Our GitHuB repo, still private now :)
+
+
+\end{thebibliography}
+
+\appendix
+\section{Path Integral Monte Carlo Algorithm for Simulating Quantum Annealing\label{app:QMC}}
+Here we review the path integral formalism (based on Suzuki-Trotter theorem) of the spin-1/2 Hamiltonian (Eq.~\eqref{eq:H_2D}) that enables us to sample onr an effective classical system of higher-dimension before we introduce how to simulate quantum annealing. We denote the tunneling Hamiltonian and the problem Hamiltonian by $H_\text{A}$ and $H_\text{B}$, respectively, which are not commutable. The partition function $Z=\text{Tr}\exp(-\beta H)$can be written as
+\begin{eqnarray}
+Z=\text{Tr}(\exp(-\beta(H_\text{A}+H_\text{B})/m)^m\\
+=\sum_{z^k}\prod_{k}\langle z^k|\exp(-\beta(H_\text{A}+H_\text{B})/m)|z^{k+1}\rangle,
+\end{eqnarray}
+with Trotter number $m$, spin configuration of each Trotter slice $z^k$, and periodic boundary condition $z^{m+1}=z^1$. Once we ignore the incommutability of $H_\text{A}$ and $H_\text{B}$, an approximated partition function $Z_\text{approx}$ can be accepted by the substitution $\langle z^k|\exp(-\beta(H_\text{A}+H_\text{B})/m)|z^{k+1}\rangle\rightarrow\langle z^k|\exp(-\beta H_\text{A}/m)\exp(-\beta H_\text{B}/m)|z^{k+1}\rangle$, where
+\begin{eqnarray}
+\langle z^k|\exp(-\beta H_\text{A}/m)\exp(-\beta H_\text{B}/m)|z^{k+1}\rangle\\
+=\langle z^k|\exp(-\beta H_\text{A}/m)|z^{k+1}\rangle\exp(-\beta H_\text{B}(z^{k+1})/m).
+\end{eqnarray}
+The nontrivial term can be rewritten as
+\begin{eqnarray}
+\langle z^k|\exp(-\beta H_\text{A}/m)|z^{k+1}\rangle\\\
+=\prod_{i,j}\langle z_{i,j}^k|\exp(\frac{\beta A}{m}\hat{\sigma}_{i,j}^x)|z_{i,j}^{k+1}\rangle
+\end{eqnarray}
+After calculating the contributions of all terms included, the approximated partition function, $(2+1)$-dimensional Hamiltonian and coupling strength between Trotter slices can be given as
+\begin{equation}
+Z_\text{approx}=(\frac{1}{2}\sinh\frac{2A}{mT})^{\frac{mn}{2}}\sum_{z_{i,j}^k}\exp(-\frac{H_{2+1}}{mT}),
+\end{equation}
+\begin{equation}
+H_{2+1}=\sum_{k=1}^m(H_\text{B}-J_\bot\sum_{i,j}z_{i,j}^kz_{i,j}^{k+1}),
+\end{equation}
+\begin{equation}
+J_\bot=-\frac{mT}{2}\ln\tanh\frac{A}{mT}
+\end{equation}
+where $z_{i,j}^k$ is the classical spin variable that denotes the state of site $(i,j)$ in Trotter slice $k$. 
+
+After obtaining the Hamiltonian that describes the equivalent $(2+1)$-d classical system, we implement PIQMC to simulate quantum annealing with this algorithm: (\romannumeral1) input $N=n\times n$, $m$, $T$, for the number of the spins in $H_\text{spin}$ for $2$-d quantum system, Trotter number, and system temperature, respectively; (\romannumeral2) design the quantum annealing schedule as a list $\{(A_0,B_0),\cdots,(A_l,B_l)\}$ with $l+1$ elements that contains discretized weight of $H_\text{A}$ and $H_\text{B}$; (\romannumeral3) randomize a spin configuration of $H_\text{spin}$ and make $m-1$ copies to generate the initial configuration for $H_{2+1}$; (\romannumeral4) start with $(A_0,B_0)$, generate the new $(2+1)-$d Hamiltonian, flip each spin and accept the configuration by Metropolis acceptance criterion, and go for the next pair of weights; (\romannumeral5) decode the solution by finding the minimum energy of $H_\text{spin}$ with spin configurations among all $m$ Trotter slices. 
+
+To define a path integral, all paths should be restricted to be the same state at the beginning and the end, but are allowed to vary in between. Step (\romannumeral3) guarantees the boundary condition at the beginning, and paths are very likely to end at the same state since the coupling strength between Trotter layers grows larger when $A_l$ is negligible. Different from simulated annealing algorithm, we adjust weights of Hamiltonians instead of system temperature $T$, which means $T$ is fixed and could be understood as the probability of quantum tunneling.  As Ref.~\cite{path_integral} suggests, $mT$ should be larger than the characteristic coupling strength $J$ between sites in each layer for obtaining a thermal equilibrium. Meanwhile, $T$ should be set to an adequate value that the acceptance possibility of a positive energy shift is reasonable. This avoids the error after decoding, e.g., constraint conditions Eqs.~\eqref{eq:column},~\eqref{eq:row} are violated because of an accepted spin flip that cost more due to the penalty. Results that breach constraint conditions are excluded before data processing. The accuracy can be enhanced by introducing more annealing steps, trotter slices, and Monte Carlo steps for each spin.
+
+The algorithm can be time-consuming if the classical Hamiltonian $H_{2+1}$ contains too many spins, which significantly affect the efficiency for finding a global minimum of a large TSP problem. The most trivial trick for speed up would be calculating the energy shift instead of evaluating the system energy twice. Once a spin is flipped, coupled spins are influenced which means we only need to calculate $3n-1$ spins in the same layer and another two contributed by its neighbor located in the nearest Trotter slices. The algorithm can also be parallelized for GPU acceleration, if adequate state updating policy is applied. Codes for implementing this algorithm on TSP is uploaded to an open access repository~\cite{codes}.
+
+
+
+
+\end{document}
