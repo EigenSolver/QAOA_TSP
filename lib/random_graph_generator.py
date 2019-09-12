@@ -105,7 +105,6 @@ def gen_dist_matr_list(save_file,N,n,scale):
         data.append(get_distance_matrix(gen_random_points(n,scale)).flatten())
     np.savetxt(save_file, np.array(data, dtype=int))
     
-
 def decode_matrix_list(target_file,n):
     '''
     extract graphs from a long randomly generated list of 2-tuples 
