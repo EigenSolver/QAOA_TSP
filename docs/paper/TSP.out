@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{section*.2}{QAOA versus Quantum Annealing on Traveling Salesman Problem}{}% 2
+\BOOKMARK [1][-]{section*.1}{Abstract}{section*.2}% 1
+\BOOKMARK [1][-]{section*.3}{Introduction}{section*.2}% 3
+\BOOKMARK [1][-]{section*.4}{Model}{section*.2}% 4
+\BOOKMARK [1][-]{section*.5}{Quantum Optimization Algorithm}{section*.2}% 5
+\BOOKMARK [2][-]{section*.6}{Problem Hamiltonian}{section*.5}% 6
+\BOOKMARK [2][-]{section*.7}{Quantum Approximated Optimization Algortithm}{section*.5}% 7
+\BOOKMARK [2][-]{section*.8}{Quantum Annealing}{section*.5}% 8
+\BOOKMARK [1][-]{section*.9}{Experiments}{section*.2}% 9
+\BOOKMARK [2][-]{section*.10}{HiQ simulator}{section*.9}% 10
+\BOOKMARK [2][-]{section*.11}{IBM/Rigetti cloud quantum computer}{section*.9}% 11
+\BOOKMARK [2][-]{section*.12}{Quantum annealer simulator}{section*.9}% 12
+\BOOKMARK [2][-]{section*.13}{D-Wave quantum annealer}{section*.9}% 13
+\BOOKMARK [1][-]{section*.14}{Discussion}{section*.2}% 14
+\BOOKMARK [1][-]{section*.15}{Conclusion}{section*.2}% 15
+\BOOKMARK [1][-]{section*.16}{Acknowledgments}{section*.2}% 16
+\BOOKMARK [1][-]{section*.17}{References}{section*.2}% 17
+\BOOKMARK [1][-]{section*.18}{Path Integral Monte Carlo Algorithm for Simulating Quantum Annealing}{section*.2}% 18

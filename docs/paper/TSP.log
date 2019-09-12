@@ -1,0 +1,485 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.19)  12 SEP 2019 16:15
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.tex
+(/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/revtex/revtex4-2.cls
+Document Class: revtex4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
+ Copyright (c) 2019 American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>Version (4.2c): Modified by Mark Doyle
+ .
+ltxutil[2019/01/18/14:29:48 4.2c utilities package (portions licensed from W. E. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 315.
+Class revtex4-2 Info: Repairing broken LaTeX eqnarray on input line 365.
+\eqncolsep=\skip41
+Class revtex4-2 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfootnote on input line 440.
+Class revtex4-2 Info: Repairing broken LateX \@sect on input line 762.
+\intertabularlinepenalty=\count80
+\@tbpen=\count81
+\@arstrutbox@hline=\box27
+Class revtex4-2 Info: Repairing broken LaTeX \@xbitor on input line 1793.
+Class revtex4-2 Info: Making \typeout \long on input line 2053.
+ltxfront[2019/01/18/14:29:48 4.2c frontmatter package (AO,DPC,MD)]
+\c@affil=\count82
+\c@collab=\count83
+\absbox=\box28
+ltxgrid[2019/01/18/14:29:48 4.2c page grid package (portions licensed from W. E. Baxter web at superscript.com)]
+\c@linecount=\count84
+\output@latex=\toks14
+\box@size@1=\box29
+\box@size@2=\box30
+\@protection@box=\box31
+\@topmark@saved=\toks15
+\footins@saved=\box32
+\footins@recovered=\box33
+\column@recovered=\box34
+\pagesofar=\box35
+\footsofar=\box36
+\pagegrid@col=\count85
+Class revtex4-2 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and \\  on input line 5585.
+\c@part=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count92
+\fbox@1=\box37
+\c@table=\count93
+\fbox@2=\box38
+\c@video=\count94
+\fbox@4=\box39
+\@bibdataout=\write3
+\widetext@top=\box40
+\widetext@bot=\box41
+Class revtex4-2 Info: Selecting society aps on input line 7581.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/revtex/aps4-2.rtx
+File: aps4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
+Class revtex4-2 Info: RevTeX society APS selected on input line 37.
+)
+Class revtex4-2 Info: Selecting journal pra on input line 7583.
+Class revtex4-2 Info: APS journal PRA selected on input line 7584.
+
+
+Class revtex4-2 Warning: No type size specified, using default 10.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/revtex/aps10pt4-2.rtx
+File: aps10pt4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
+Class revtex4-2 Info: RevTeX pointsize 10pt selected on input line 36.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip44
+\bibsep=\skip45
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count95
+)
+Class revtex4-2 Info: Repairing natbib's \BibitemShut on input line 7588.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/revtex/revsymb4-2.sty
+Package: revsymb4-2 2019/01/18/14:29:48 4.2c (https://journals.aps.org/revtex/ for documentation)
+LaTeX Info: Redefining \REV@mathfrak on input line 125.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2014/10/28 v1.06 decimal alignment package (DPC)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen104
+\ar@mcellbox=\box42
+\extrarowheight=\dimen105
+\NC@list=\toks17
+\extratabsurround=\skip46
+\backup@length=\skip47
+\ar@cellbox=\box43
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Info: Redefining \Bbb on input line 113.
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen106
+)
+LaTeX Info: Redefining \text on input line 28.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+LaTeX Info: Redefining \boldsymbol on input line 28.
+\pmbraise@=\dimen107
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen108
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
+\dotsspace@=\muskip11
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks20
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks21
+\eqnshift@=\dimen109
+\alignsep@=\dimen110
+\tagshift@=\dimen111
+\tagwidth@=\dimen112
+\totwidth@=\dimen113
+\lineht@=\dimen114
+\@envbody=\toks22
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip51
+\subfigcapskip=\skip52
+\subfigcaptopadj=\dimen115
+\subfigbottomskip=\skip53
+\subfigcapmargin=\dimen116
+\subfiglabelskip=\skip54
+\c@subfigure=\count108
+\c@lofdepth=\count109
+\c@subtable=\count110
+\c@lotdepth=\count111
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip55
+\subfig@bottom=\skip56
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)))) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2019/06/12 v6.88h Hypertext links for LaTeX
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package hobsub Info: Skipping package `kvdefinekeys' (already loaded).
+Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+\@linkdim=\dimen117
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2019/06/12 v6.88h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count114
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 4424.
+Package hyperref Info: Hyper figures OFF on input line 4550.
+Package hyperref Info: Link nesting OFF on input line 4555.
+Package hyperref Info: Hyper index ON on input line 4558.
+Package hyperref Info: Plain pages OFF on input line 4565.
+Package hyperref Info: Backreferencing OFF on input line 4570.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4803.
+LaTeX Info: Redefining \href on input line 5067.
+\c@Hy@tempcnt=\count115
+LaTeX Info: Redefining \url on input line 5156.
+\XeTeXLinkMargin=\dimen118
+\Fld@menulength=\count116
+\Field@Width=\dimen119
+\Fld@charsize=\dimen120
+Package hyperref Info: Hyper figures OFF on input line 6411.
+Package hyperref Info: Link nesting OFF on input line 6416.
+Package hyperref Info: Hyper index ON on input line 6419.
+Package hyperref Info: backreferencing OFF on input line 6426.
+Package hyperref Info: Link coloring OFF on input line 6431.
+Package hyperref Info: Link coloring with OCG OFF on input line 6436.
+Package hyperref Info: PDF/A mode OFF on input line 6441.
+LaTeX Info: Redefining \ref on input line 6481.
+LaTeX Info: Redefining \pageref on input line 6485.
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2019/06/12 v6.88h Hyperref driver for pdfTeX
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
+)
+\Hy@SectionHShift=\skip57
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/breakurl/breakurl.sty
+Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count122
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 48.
+
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks26
+\SOUL@lasttoken=\toks27
+\SOUL@cmds=\toks28
+\SOUL@buffer=\toks29
+\SOUL@token=\toks30
+\SOUL@spaceskip=\skip58
+\SOUL@ttwidth=\dimen121
+\SOUL@uldp=\dimen122
+\SOUL@ulht=\dimen123
+)
+Class revtex4-2 Info: Unrecognized array package. Please update this document class! (Proceeding with fingers crossed.) on input line 32.
+Class revtex4-2 Info: Robustifying \LaTeX's \boldmath command on input line 32.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 32.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 32.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 32.
+ (/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.aux)
+\openout1 = `TSP.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count123
+\scratchdimen=\dimen124
+\scratchbox=\box46
+\nofMPsegments=\count124
+\nofMParguments=\count125
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count126
+\MPscratchDim=\dimen125
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
+\everyMPtoPDFconversion=\toks32
+)
+\AtBeginShipoutBox=\box47
+Package hyperref Info: Link coloring ON on input line 32.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+ (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count129
+)
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
+ (/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.out) (/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.out)
+\@outlinefile=\write4
+\openout4 = `TSP.out'.
+
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 32.
+\openout3 = `TSPNotes.bib'.
+
+
+
+Class revtex4-2 Warning: Assuming \noaffiliation for authors.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (2.91028pt too wide) detected at line 83
+[]\OML/cmm/m/it/10 H[] \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 d[]w[][][] \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 d[]w[][][];
+ []
+
+[1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 4940) in paragraph at lines 132--133
+[]\OT1/cmr/m/n/10 We ac-knowl-edge fund-ing from projects QMiCS
+ []
+
+
+Underfull \hbox (badness 7081) in paragraph at lines 132--133
+\OT1/cmr/m/n/10 (820505) and Open-Su-perQ (820363) of the EU
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 132--133
+\OT1/cmr/m/n/10 Flag-ship on Quan-tum Tech-nolo-gies, Span-ish Gov-
+ []
+
+(/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.bbl) [3] [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+ (/home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
+Package rerunfilecheck Info: File `TSP.out' has not changed.
+(rerunfilecheck)             Checksum: 7FB55016AD63F36F835FB0390D2F55E2;1250.
+ ) 
+Here is how much of TeX's memory you used:
+ 8603 strings out of 492609
+ 122118 string characters out of 6129033
+ 238310 words of memory out of 5000000
+ 12330 multiletter control sequences out of 15000+600000
+ 17120 words of font info for 63 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 42i,11n,28p,1471b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on /home/neuromancer/Documents/QAOA_TSP/docs/paper/TSP.pdf (4 pages, 216474 bytes).
+PDF statistics:
+ 208 PDF objects out of 1000 (max. 8388607)
+ 182 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+
