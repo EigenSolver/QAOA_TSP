@@ -3,3 +3,4 @@
 ./__puchche__/
 ./lib/__pycache__/
 ./lib/tsp/__pycache__/
+*.pyc
