@@ -1,6 +1,4 @@
 ./.ipynb_checkpoints/
-./lib/.ipynb_checkpoints/
-./__puchche__/
-./lib/__pycache__/
-./lib/tsp/__pycache__/
+./__pycache__/
+./.vscode/settings.json
 *.pyc

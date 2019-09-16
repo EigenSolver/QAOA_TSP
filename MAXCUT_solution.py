@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import networkx as nx
-from lib.maxcut_solver import goemans_williamson
-from lib.utilities import report
-from lib.random_graph_generator import gen_adj_matr_list, decode_matrix_list
+
+
+from qaoa.test.maxcut_solver import goemans_williamson
+from qaoa.utils.utilities import report
+from qaoa.tests.random_graph_generator import gen_adj_matr_list, decode_matrix_list
 
 #%%
 # set params

@@ -4,12 +4,11 @@ import pandas as pd
 
 from qaoa.tests.random_graph_generator import decode_matrix_list
 from qaoa.hamiltonians.graph_converter import MAXCUT_H_cost
-# from lib.qaoa import QAOA
 from qaoa.utils.utilities import timer, report
 
 # %% initialize engine
-from QAOA_LIB.qaoa.backends.qaoa import QAOA
-from QAOA_LIB.qaoa.projectq_header import *  # eng is initialized!
+from qaoa.backends.qaoa import QAOA
+from qaoa.utils.projectq_header import *  # eng is initialized!
 
 print('compiler engine initialization...')
 
