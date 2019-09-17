@@ -1,8 +1,5 @@
 # Research on Quantum Approximate Optimization Algorithm versus Quantum Annealing
-
-
 Collaborator: Yongcheng Ding, Yuning Zhang, Bin Cheng
-
 
 ## TSP Problems
 - Quantum Annealing (D-Wave)
@@ -16,15 +13,15 @@ Collaborator: Yongcheng Ding, Yuning Zhang, Bin Cheng
 - ./docs/ : shared ducuments, including research papers on recent progress of QAOA, technical documents of DWave annealer and our research notes
 
 ## Library
-the library used in this project is capsulated into a indepedent package https://github.com/Neuromancer43/QAOA_LIB
+the algorithms used in this project is capsulated into a indepedent package https://github.com/Neuromancer43/QAOA_LIB
  
 
 ## Addressd Targets
 
 - approximated QAOA time complexity with increased problem scaling (iterations x time per iter, evaluated by experimental data of superconducting circuit)
 - QAOA space complexity with increased problem scaling (scale of circuit, depth x qubits)
-- optimizer performance (iteration? global minimum)
-- approximate ratio
+- optimizer performance (iteration, loacl minimum)
+- approximate ratio (optimized objective function/global optimum)
 
 ## Review of previously numerical work
 

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
-
 from qaoa.tests.random_graph_generator import decode_matrix_list
 from qaoa.hamiltonians.graph_converter import TSP_H_cost
 from qaoa.ansatzes.operator_ansatz import TSP_H_mixers, TSP_Ansatz
