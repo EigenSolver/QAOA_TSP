@@ -13,7 +13,7 @@ from projectq.backends import Simulator, CommandPrinter, ResourceCounter
 from projectq.setups.restrictedgateset import get_engine_list
 from projectq import MainEngine
 
-import numpy as np 
+import numpy as np
 from optimizeq.utils import report
 
 engine_list = get_engine_list(
@@ -31,13 +31,11 @@ def print_tsp_circuit(eng, n, p):
     main = QAOA(eng, H_cost, n_qubits, n_steps=p, H_mixer=H_mixer,
                 ansatz_func=TSP_Ansatz)  # apply operator ansatz
 
-    state = main.prep_state(np.random.rand(2*n_qubits))
-    eng.flush()
-    All(Measure) | state
-    del state
+    state = main.prep_state(np.random.rand(2*p))
+    eng.flush(deallocate_qubits=True)
 
 
 os.chdir("./data/circuits")
-for n in range(12, 21):
-    for p in range(1, 3):
+for n in range(4, 5):
+    for p in range(1, 4):
         print_tsp_circuit(eng, n, p)
