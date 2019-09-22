@@ -24,6 +24,7 @@ eng = MainEngine(CommandPrinter(accept_input=False), engine_list)
 
 def print_tsp_circuit(eng, n, p):
     n_qubits = (n-1)**2
+    ori_stdout = sys.stdout
     sys.stdout = open("TSP_circuit_n={0}_p={1}.txt".format(n, p), "w")
     matr = get_distance_matrix(gen_random_points(n))
     H_mixer = TSP_H_mixers(n-1)
@@ -33,9 +34,12 @@ def print_tsp_circuit(eng, n, p):
 
     state = main.prep_state(np.random.rand(2*p))
     eng.flush(deallocate_qubits=True)
+    sys.stdout = ori_stdout
 
-
+#%%
 os.chdir("./data/circuits")
-for n in range(4, 5):
-    for p in range(1, 4):
+#%%
+for n in range(14, 15):
+    for p in range(1, 2):
         print_tsp_circuit(eng, n, p)
+        print("n=", n, "p=", p)

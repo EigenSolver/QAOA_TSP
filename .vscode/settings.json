@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\neuro\\Anaconda3\\python.exe",
+    "python.pythonPath": "/home/neuromancer/anaconda3/bin/python",
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true

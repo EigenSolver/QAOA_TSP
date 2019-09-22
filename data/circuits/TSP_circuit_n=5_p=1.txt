@@ -1,2428 +1,2428 @@
-Allocate | Qureg[0]
-X | Qureg[0]
-Rz(3.446852618539) | Qureg[0]
-Allocate | Qureg[5]
-Allocate | Qureg[4]
-CX | ( Qureg[0], Qureg[4] )
-Rz(0.0) | Qureg[4]
-CX | ( Qureg[0], Qureg[4] )
-X | Qureg[5]
-CX | ( Qureg[0], Qureg[5] )
-Rz(4.689633753254) | Qureg[5]
-CX | ( Qureg[0], Qureg[5] )
-Rz(3.294491444496) | Qureg[4]
-Allocate | Qureg[1]
-Rz(1.710813061022) | Qureg[1]
-CX | ( Qureg[1], Qureg[4] )
-Rz(4.689633753254) | Qureg[4]
-CX | ( Qureg[1], Qureg[4] )
-Allocate | Qureg[2]
-Rz(11.60236189216) | Qureg[2]
-CX | ( Qureg[2], Qureg[4] )
-Rz(3.255251835183) | Qureg[4]
-Rz(0.105274561685) | Qureg[5]
-CX | ( Qureg[1], Qureg[5] )
-Rz(0.0) | Qureg[5]
-Allocate | Qureg[3]
-CX | ( Qureg[1], Qureg[5] )
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[2], Qureg[5] )
-Rz(12.142689399646) | Qureg[3]
-Rz(10.098068924711) | Qureg[5]
-Allocate | Qureg[6]
-CX | ( Qureg[0], Qureg[6] )
-Rz(3.255251835183) | Qureg[6]
-CX | ( Qureg[0], Qureg[6] )
-Rz(10.321349282962) | Qureg[6]
-CX | ( Qureg[1], Qureg[6] )
-Rz(10.098068924711) | Qureg[6]
-CX | ( Qureg[1], Qureg[6] )
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[2], Qureg[6] )
-Rz(0.0) | Qureg[6]
-Rz(2.974239303675) | Qureg[4]
-CX | ( Qureg[3], Qureg[4] )
-Allocate | Qureg[7]
-CX | ( Qureg[0], Qureg[7] )
-Rz(2.974239303675) | Qureg[7]
-CX | ( Qureg[0], Qureg[7] )
-Rz(10.494709655577) | Qureg[7]
-CX | ( Qureg[1], Qureg[7] )
-Rz(10.292401269912) | Qureg[7]
-Allocate | Qureg[8]
-CX | ( Qureg[4], Qureg[8] )
-Allocate | Qureg[10]
-Rz(0.0) | Qureg[8]
-CX | ( Qureg[4], Qureg[8] )
-CX | ( Qureg[1], Qureg[7] )
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[2], Qureg[6] )
-CX | ( Qureg[2], Qureg[7] )
-Rz(0.335560520164) | Qureg[7]
-Rz(10.292401269912) | Qureg[5]
-CX | ( Qureg[3], Qureg[5] )
-Allocate | Qureg[9]
-CX | ( Qureg[4], Qureg[9] )
-Rz(4.689633753254) | Qureg[9]
-CX | ( Qureg[4], Qureg[9] )
-Rz(3.294491444496) | Qureg[8]
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[3], Qureg[6] )
-Rz(4.689633753254) | Qureg[8]
-CX | ( Qureg[2], Qureg[7] )
-CX | ( Qureg[5], Qureg[8] )
-Rz(0.335560520164) | Qureg[6]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[3], Qureg[7] )
-Rz(3.255251835183) | Qureg[8]
-Rz(0.105274561685) | Qureg[9]
-CX | ( Qureg[5], Qureg[9] )
-Rz(0.0) | Qureg[9]
-Rz(0.0) | Qureg[7]
-CX | ( Qureg[5], Qureg[9] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[3], Qureg[7] )
-Rz(10.098068924711) | Qureg[9]
-X | Qureg[10]
-CX | ( Qureg[4], Qureg[10] )
-Rz(3.255251835183) | Qureg[10]
-CX | ( Qureg[4], Qureg[10] )
-Rz(10.321349282962) | Qureg[10]
-CX | ( Qureg[5], Qureg[10] )
-Rz(10.098068924711) | Qureg[10]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[5], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[6], Qureg[10] )
-Rz(2.974239303675) | Qureg[8]
-CX | ( Qureg[7], Qureg[8] )
-Rz(0.0) | Qureg[10]
-Allocate | Qureg[11]
-CX | ( Qureg[4], Qureg[11] )
-Rz(2.974239303675) | Qureg[11]
-CX | ( Qureg[4], Qureg[11] )
-Rz(10.494709655577) | Qureg[11]
-CX | ( Qureg[5], Qureg[11] )
-Rz(10.292401269912) | Qureg[11]
-Allocate | Qureg[12]
-CX | ( Qureg[8], Qureg[12] )
-Rz(0.0) | Qureg[12]
-CX | ( Qureg[8], Qureg[12] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[11] )
-CX | ( Qureg[6], Qureg[10] )
-CX | ( Qureg[6], Qureg[11] )
-Rz(10.292401269912) | Qureg[9]
-CX | ( Qureg[7], Qureg[9] )
-Rz(0.335560520164) | Qureg[11]
-Allocate | Qureg[13]
-CX | ( Qureg[8], Qureg[13] )
-Allocate | Qureg[15]
-Rz(4.689633753254) | Qureg[13]
-CX | ( Qureg[8], Qureg[13] )
-Allocate | Qureg[14]
-CX | ( Qureg[8], Qureg[14] )
-Rz(3.446852618539) | Qureg[12]
-CX | ( Qureg[9], Qureg[12] )
-Rz(3.255251835183) | Qureg[14]
-CX | ( Qureg[8], Qureg[14] )
-Rz(4.689633753254) | Qureg[12]
-CX | ( Qureg[9], Qureg[12] )
-X | Qureg[15]
-CX | ( Qureg[8], Qureg[15] )
-Rz(1.710813061022) | Qureg[13]
-CX | ( Qureg[9], Qureg[13] )
-Rz(2.974239303675) | Qureg[15]
-CX | ( Qureg[8], Qureg[15] )
-Rz(0.0) | Qureg[13]
-CX | ( Qureg[9], Qureg[13] )
-CX | ( Qureg[7], Qureg[10] )
-Rz(0.335560520164) | Qureg[10]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-Rz(11.60236189216) | Qureg[14]
-CX | ( Qureg[9], Qureg[14] )
-Rz(3.255251835183) | Qureg[12]
-CX | ( Qureg[10], Qureg[12] )
-Rz(10.098068924711) | Qureg[14]
-CX | ( Qureg[10], Qureg[13] )
-Rz(12.142689399646) | Qureg[15]
-CX | ( Qureg[9], Qureg[14] )
-CX | ( Qureg[9], Qureg[15] )
-Rz(10.098068924711) | Qureg[13]
-CX | ( Qureg[10], Qureg[13] )
-Rz(10.292401269912) | Qureg[15]
-CX | ( Qureg[6], Qureg[11] )
-CX | ( Qureg[7], Qureg[11] )
-Rz(0.0) | Qureg[11]
-CX | ( Qureg[7], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[10], Qureg[14] )
-Rz(2.974239303675) | Qureg[12]
-CX | ( Qureg[11], Qureg[12] )
-Rz(0.0) | Qureg[14]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[15] )
-CX | ( Qureg[10], Qureg[14] )
-CX | ( Qureg[10], Qureg[15] )
-Rz(10.292401269912) | Qureg[13]
-CX | ( Qureg[11], Qureg[13] )
-Rz(0.335560520164) | Qureg[15]
-CX | ( Qureg[10], Qureg[15] )
-CX | ( Qureg[11], Qureg[14] )
-Rz(0.335560520164) | Qureg[14]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[11], Qureg[15] )
-Rz(0.0) | Qureg[15]
-CX | ( Qureg[11], Qureg[15] )
-H | Qureg[13]
-H | Qureg[12]
-H | Qureg[1]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-H | Qureg[13]
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(9.999755030169) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-H | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[12]
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[13]
-Rx(10.995574287564) | Qureg[1]
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[1]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-H | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-H | Qureg[14]
-H | Qureg[3]
-H | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-H | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[14]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[3]
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-H | Qureg[14]
-H | Qureg[15]
-Rx(10.995574287564) | Qureg[3]
-Rx(1.570796326795) | Qureg[14]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[3]
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-H | Qureg[8]
-H | Qureg[5]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[5], Qureg[8] )
-H | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[8], Qureg[9] )
-Rz(9.999755030169) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[9]
-H | Qureg[8]
-CX | ( Qureg[5], Qureg[8] )
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-Rx(10.995574287564) | Qureg[8]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[8]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[5], Qureg[8] )
-H | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[9]
-H | Qureg[8]
-CX | ( Qureg[5], Qureg[8] )
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-Rz(9.999755030169) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-H | Qureg[11]
-H | Qureg[10]
-H | Qureg[7]
-H | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[7], Qureg[10] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[7], Qureg[10] )
-H | Qureg[10]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[7], Qureg[10] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-Rx(10.995574287564) | Qureg[10]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-H | Qureg[10]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[7]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[7], Qureg[10] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[7], Qureg[10] )
-H | Qureg[10]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[10], Qureg[11] )
-Rz(9.999755030169) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-H | Qureg[13]
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[5], Qureg[8] )
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[1], Qureg[12] )
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[8], Qureg[9] )
-Rz(2.566615584191) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[5], Qureg[8] )
-CX | ( Qureg[4], Qureg[5] )
-Rx(10.995574287564) | Qureg[5]
-Rx(10.995574287564) | Qureg[4]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[4]
-H | Qureg[1]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-H | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[4]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[4]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[4], Qureg[5] )
-Rz(9.999755030169) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[5]
-H | Qureg[4]
-CX | ( Qureg[1], Qureg[4] )
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[4]
-Rx(10.995574287564) | Qureg[1]
-Rx(1.570796326795) | Qureg[4]
-H | Qureg[1]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[0], Qureg[1] )
-Rx(10.995574287564) | Qureg[4]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[1]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[1]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-H | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[4]
-Rx(10.995574287564) | Qureg[1]
-Rx(1.570796326795) | Qureg[4]
-H | Qureg[1]
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[5]
-H | Qureg[4]
-CX | ( Qureg[1], Qureg[4] )
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-Rz(9.999755030169) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[14]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[14]
-Rx(1.570796326795) | Qureg[3]
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[3], Qureg[14] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[7], Qureg[10] )
-CX | ( Qureg[6], Qureg[7] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[7]
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[6]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[6]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[7]
-H | Qureg[3]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[3]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[6]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[6], Qureg[7] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-H | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[8], Qureg[9] )
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(9.999755030169) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[13]
-H | Qureg[12]
-CX | ( Qureg[9], Qureg[12] )
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[8], Qureg[9] )
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[12]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[8], Qureg[9] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[12]
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-H | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[8], Qureg[9] )
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[12]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-Rz(2.566615584191) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[13]
-H | Qureg[12]
-CX | ( Qureg[9], Qureg[12] )
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-Rz(9.999755030169) | Qureg[13]
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[8], Qureg[9] )
-Rx(10.995574287564) | Qureg[14]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[14]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[11], Qureg[14] )
-H | Qureg[14]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[10], Qureg[11] )
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[10], Qureg[11] )
-Rx(10.995574287564) | Qureg[14]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[14]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[11]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[10], Qureg[11] )
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[11], Qureg[14] )
-H | Qureg[14]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[14], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-H | Qureg[4]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[4]
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-H | Qureg[12]
-CX | ( Qureg[14], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[14] )
-CX | ( Qureg[10], Qureg[11] )
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[10], Qureg[11] )
-CX | ( Qureg[11], Qureg[14] )
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[9], Qureg[12] )
-CX | ( Qureg[12], Qureg[13] )
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[1]
-Rx(1.570796326795) | Qureg[2]
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[0], Qureg[1] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[4], Qureg[5] )
-Rz(2.566615584191) | Qureg[5]
-CX | ( Qureg[4], Qureg[5] )
-CX | ( Qureg[1], Qureg[4] )
-CX | ( Qureg[2], Qureg[3] )
-CX | ( Qureg[3], Qureg[6] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[6], Qureg[7] )
-CX | ( Qureg[3], Qureg[6] )
-CX | ( Qureg[2], Qureg[3] )
-Rz(2.566615584191) | Qureg[13]
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[14], Qureg[15] )
-CX | ( Qureg[12], Qureg[13] )
-CX | ( Qureg[11], Qureg[14] )
-Rx(10.995574287564) | Qureg[14]
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[14]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[13]
-CX | ( Qureg[0], Qureg[1] )
-H | Qureg[2]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rx(10.995574287564) | Qureg[14]
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-H | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[13]
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[14]
-Rx(10.995574287564) | Qureg[2]
-Rx(1.570796326795) | Qureg[13]
-H | Qureg[2]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rx(10.995574287564) | Qureg[14]
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-H | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[2]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[9], Qureg[12] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-H | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[3]
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-H | Qureg[12]
-H | Qureg[15]
-Rx(10.995574287564) | Qureg[3]
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[3]
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[8], Qureg[9] )
-CX | ( Qureg[10], Qureg[11] )
-Rx(10.995574287564) | Qureg[9]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[9]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[6], Qureg[9] )
-H | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[9], Qureg[10] )
-Rz(9.999755030169) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[10]
-H | Qureg[9]
-CX | ( Qureg[6], Qureg[9] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-Rx(10.995574287564) | Qureg[9]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[9]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[6], Qureg[9] )
-H | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[10]
-H | Qureg[9]
-CX | ( Qureg[6], Qureg[9] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-Rz(9.999755030169) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-Rx(10.995574287564) | Qureg[8]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[7]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[7], Qureg[8] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[7], Qureg[8] )
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[7], Qureg[8] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-Rx(10.995574287564) | Qureg[8]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-H | Qureg[8]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[7]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[7], Qureg[8] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[7], Qureg[8] )
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[8], Qureg[11] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[6], Qureg[9] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[2], Qureg[13] )
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[9], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[6], Qureg[9] )
-CX | ( Qureg[5], Qureg[6] )
-Rx(10.995574287564) | Qureg[6]
-Rx(10.995574287564) | Qureg[5]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[5]
-H | Qureg[2]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[5] )
-H | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[5]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[5]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[5], Qureg[6] )
-Rz(9.999755030169) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[6]
-H | Qureg[5]
-CX | ( Qureg[2], Qureg[5] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[5]
-Rx(10.995574287564) | Qureg[2]
-Rx(1.570796326795) | Qureg[5]
-H | Qureg[2]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[1], Qureg[2] )
-Rx(10.995574287564) | Qureg[5]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[2]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[2]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[5] )
-H | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[5]
-Rx(10.995574287564) | Qureg[2]
-Rx(1.570796326795) | Qureg[5]
-H | Qureg[2]
-CX | ( Qureg[1], Qureg[2] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[6]
-H | Qureg[5]
-CX | ( Qureg[2], Qureg[5] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-Rz(9.999755030169) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[1], Qureg[2] )
-H | Qureg[12]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[12]
-Rx(1.570796326795) | Qureg[3]
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[3], Qureg[12] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[7], Qureg[8] )
-CX | ( Qureg[4], Qureg[7] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[7]
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[4]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[4] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[3], Qureg[4] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[4]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[4] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[7]
-H | Qureg[3]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[3]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[3], Qureg[4] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[3], Qureg[4] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[4]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[4], Qureg[7] )
-Rx(10.995574287564) | Qureg[13]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[13]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-H | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[9], Qureg[10] )
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[13]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[14]
-H | Qureg[13]
-CX | ( Qureg[10], Qureg[13] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[9], Qureg[10] )
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[13]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[9], Qureg[10] )
-Rx(10.995574287564) | Qureg[13]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[13]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-H | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[9], Qureg[10] )
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[13]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[14]
-H | Qureg[13]
-CX | ( Qureg[10], Qureg[13] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[9], Qureg[10] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[11], Qureg[12] )
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[12]
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[8], Qureg[11] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[8], Qureg[11] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[12]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[11]
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[8], Qureg[11] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[11], Qureg[12] )
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[12]
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[12], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-H | Qureg[5]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[5]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[12], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[12] )
-H | Qureg[13]
-CX | ( Qureg[8], Qureg[11] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[11], Qureg[12] )
-CX | ( Qureg[1], Qureg[2] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[2], Qureg[5] )
-Rx(1.570796326795) | Qureg[13]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[9], Qureg[10] )
-CX | ( Qureg[10], Qureg[13] )
-CX | ( Qureg[13], Qureg[14] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[5], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[5], Qureg[6] )
-CX | ( Qureg[2], Qureg[5] )
-CX | ( Qureg[0], Qureg[3] )
-CX | ( Qureg[1], Qureg[2] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[12], Qureg[15] )
-CX | ( Qureg[11], Qureg[12] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[13], Qureg[14] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[14]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[12]
-H | Qureg[2]
-CX | ( Qureg[3], Qureg[4] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[4], Qureg[7] )
-CX | ( Qureg[3], Qureg[4] )
-CX | ( Qureg[0], Qureg[3] )
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-H | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-H | Qureg[12]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[12]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[2]
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-H | Qureg[12]
-H | Qureg[14]
-Rx(10.995574287564) | Qureg[2]
-Rx(1.570796326795) | Qureg[12]
-H | Qureg[2]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[12]
-H | Qureg[2]
-H | Qureg[12]
-Rx(1.570796326795) | Qureg[2]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[2]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[10], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[13]
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-H | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[13]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[3]
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-H | Qureg[13]
-H | Qureg[15]
-Rx(10.995574287564) | Qureg[3]
-Rx(1.570796326795) | Qureg[13]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[13]
-H | Qureg[3]
-H | Qureg[13]
-Rx(1.570796326795) | Qureg[3]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[3]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[8], Qureg[11] )
-CX | ( Qureg[9], Qureg[10] )
-Rx(10.995574287564) | Qureg[8]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[6]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[10]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-Rz(9.999755030169) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[6], Qureg[8] )
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[10]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-Rx(10.995574287564) | Qureg[8]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-H | Qureg[8]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[6]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[10]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[6], Qureg[8] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[6], Qureg[8] )
-H | Qureg[8]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[8], Qureg[10] )
-Rx(10.995574287564) | Qureg[9]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-H | Qureg[9]
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[7]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[7], Qureg[9] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[7], Qureg[9] )
-H | Qureg[9]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[7], Qureg[9] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-Rx(10.995574287564) | Qureg[9]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-H | Qureg[9]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[7]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[7], Qureg[9] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[7], Qureg[9] )
-H | Qureg[9]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[12]
-H | Qureg[2]
-Rx(1.570796326795) | Qureg[12]
-Rx(1.570796326795) | Qureg[2]
-Rz(9.999755030169) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[10]
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[2], Qureg[12] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(1.570796326795) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-Rz(2.566615584191) | Qureg[10]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[6], Qureg[8] )
-CX | ( Qureg[4], Qureg[6] )
-Rx(10.995574287564) | Qureg[6]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[6]
-Rx(10.995574287564) | Qureg[2]
-H | Qureg[4]
-H | Qureg[2]
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[6]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-Rz(9.999755030169) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[4]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[6]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[6]
-Rx(10.995574287564) | Qureg[4]
-H | Qureg[6]
-H | Qureg[2]
-H | Qureg[4]
-Rx(1.570796326795) | Qureg[2]
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[6]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[0]
-H | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(10.995574287564) | Qureg[6]
-H | Qureg[4]
-H | Qureg[6]
-Rx(1.570796326795) | Qureg[4]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[13]
-H | Qureg[3]
-Rx(1.570796326795) | Qureg[13]
-Rx(1.570796326795) | Qureg[3]
-Rz(9.999755030169) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[11]
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[3], Qureg[13] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(1.570796326795) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-Rz(2.566615584191) | Qureg[11]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[7], Qureg[9] )
-CX | ( Qureg[5], Qureg[7] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[7]
-Rx(10.995574287564) | Qureg[3]
-H | Qureg[5]
-H | Qureg[3]
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[5]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[7]
-Rx(10.995574287564) | Qureg[5]
-H | Qureg[7]
-H | Qureg[3]
-H | Qureg[5]
-Rx(1.570796326795) | Qureg[3]
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[1]
-H | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(10.995574287564) | Qureg[7]
-H | Qureg[5]
-H | Qureg[7]
-Rx(1.570796326795) | Qureg[5]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[5], Qureg[7] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[14]
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[10]
-H | Qureg[10]
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[10], Qureg[12] )
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[12]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[8], Qureg[10] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[8], Qureg[10] )
-Rx(10.995574287564) | Qureg[12]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[14]
-H | Qureg[12]
-H | Qureg[10]
-Rx(1.570796326795) | Qureg[10]
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[8], Qureg[10] )
-Rx(10.995574287564) | Qureg[8]
-H | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[10], Qureg[12] )
-H | Qureg[12]
-Rx(10.995574287564) | Qureg[14]
-H | Qureg[14]
-Rx(1.570796326795) | Qureg[12]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[12], Qureg[14] )
-Rx(10.995574287564) | Qureg[13]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[13]
-Rx(10.995574287564) | Qureg[11]
-H | Qureg[11]
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[11], Qureg[13] )
-H | Qureg[13]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[11] )
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[11] )
-Rx(10.995574287564) | Qureg[13]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-H | Qureg[13]
-H | Qureg[11]
-Rx(1.570796326795) | Qureg[11]
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[11] )
-Rx(10.995574287564) | Qureg[9]
-H | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[11], Qureg[13] )
-H | Qureg[13]
-Rx(10.995574287564) | Qureg[15]
-H | Qureg[15]
-Rx(1.570796326795) | Qureg[13]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[13], Qureg[15] )
-Rz(9.999755030169) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-H | Qureg[6]
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-H | Qureg[0]
-Rx(1.570796326795) | Qureg[0]
-CX | ( Qureg[0], Qureg[2] )
-CX | ( Qureg[2], Qureg[4] )
-Rx(1.570796326795) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-Rz(2.566615584191) | Qureg[6]
-CX | ( Qureg[4], Qureg[6] )
-CX | ( Qureg[2], Qureg[4] )
-CX | ( Qureg[0], Qureg[2] )
-Rx(10.995574287564) | Qureg[0]
-Deallocate | Qureg[0]
-Rz(9.999755030169) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-H | Qureg[15]
-CX | ( Qureg[11], Qureg[13] )
-CX | ( Qureg[9], Qureg[11] )
-H | Qureg[9]
-Rx(1.570796326795) | Qureg[9]
-CX | ( Qureg[9], Qureg[11] )
-CX | ( Qureg[11], Qureg[13] )
-Rx(1.570796326795) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-Rz(2.566615584191) | Qureg[15]
-CX | ( Qureg[13], Qureg[15] )
-CX | ( Qureg[11], Qureg[13] )
-Rx(10.995574287564) | Qureg[13]
-Deallocate | Qureg[13]
-Rz(9.999755030169) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-H | Qureg[7]
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-H | Qureg[1]
-Rx(1.570796326795) | Qureg[1]
-CX | ( Qureg[1], Qureg[3] )
-CX | ( Qureg[3], Qureg[5] )
-Rx(1.570796326795) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-Rz(2.566615584191) | Qureg[7]
-CX | ( Qureg[5], Qureg[7] )
-CX | ( Qureg[3], Qureg[5] )
-CX | ( Qureg[1], Qureg[3] )
-Rx(10.995574287564) | Qureg[3]
-Deallocate | Qureg[3]
-Rz(9.999755030169) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-H | Qureg[14]
-CX | ( Qureg[10], Qureg[12] )
-CX | ( Qureg[8], Qureg[10] )
-H | Qureg[8]
-Rx(1.570796326795) | Qureg[8]
-CX | ( Qureg[8], Qureg[10] )
-CX | ( Qureg[10], Qureg[12] )
-Rx(1.570796326795) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-Rz(2.566615584191) | Qureg[14]
-CX | ( Qureg[12], Qureg[14] )
-CX | ( Qureg[10], Qureg[12] )
-Rx(10.995574287564) | Qureg[12]
-Deallocate | Qureg[12]
-Rx(10.995574287564) | Qureg[2]
-Deallocate | Qureg[2]
-Rx(10.995574287564) | Qureg[15]
-Deallocate | Qureg[15]
-Rx(10.995574287564) | Qureg[5]
-Deallocate | Qureg[5]
-Rx(10.995574287564) | Qureg[14]
-Deallocate | Qureg[14]
-Rx(10.995574287564) | Qureg[4]
-Deallocate | Qureg[4]
-Rx(10.995574287564) | Qureg[7]
-Deallocate | Qureg[7]
-Rx(10.995574287564) | Qureg[6]
-Deallocate | Qureg[6]
-CX | ( Qureg[9], Qureg[11] )
-Rx(10.995574287564) | Qureg[9]
-Deallocate | Qureg[9]
-CX | ( Qureg[8], Qureg[10] )
-Rx(10.995574287564) | Qureg[8]
-Deallocate | Qureg[8]
-Rx(10.995574287564) | Qureg[11]
-Deallocate | Qureg[11]
-Rx(10.995574287564) | Qureg[1]
-Deallocate | Qureg[1]
-Rx(10.995574287564) | Qureg[10]
-Deallocate | Qureg[10]
+Allocate | Qureg[36]
+X | Qureg[36]
+Rz(0.504392982742) | Qureg[36]
+Allocate | Qureg[41]
+Allocate | Qureg[40]
+CX | ( Qureg[36], Qureg[40] )
+Rz(0.0) | Qureg[40]
+CX | ( Qureg[36], Qureg[40] )
+X | Qureg[41]
+CX | ( Qureg[36], Qureg[41] )
+Rz(4.576176910816) | Qureg[41]
+CX | ( Qureg[36], Qureg[41] )
+Rz(7.713542963542) | Qureg[40]
+Allocate | Qureg[37]
+Rz(11.772342841206) | Qureg[37]
+CX | ( Qureg[37], Qureg[40] )
+Rz(4.576176910816) | Qureg[40]
+CX | ( Qureg[37], Qureg[40] )
+Allocate | Qureg[38]
+Rz(10.421359196131) | Qureg[38]
+CX | ( Qureg[38], Qureg[40] )
+Rz(12.4725188323) | Qureg[40]
+Rz(10.069579408885) | Qureg[41]
+CX | ( Qureg[37], Qureg[41] )
+Rz(0.0) | Qureg[41]
+Allocate | Qureg[39]
+CX | ( Qureg[37], Qureg[41] )
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[38], Qureg[41] )
+Rz(6.131017312759) | Qureg[39]
+Rz(12.127218420796) | Qureg[41]
+Allocate | Qureg[42]
+CX | ( Qureg[36], Qureg[42] )
+Rz(12.4725188323) | Qureg[42]
+CX | ( Qureg[36], Qureg[42] )
+Rz(4.892457392099) | Qureg[42]
+CX | ( Qureg[37], Qureg[42] )
+Rz(12.127218420796) | Qureg[42]
+CX | ( Qureg[37], Qureg[42] )
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[38], Qureg[42] )
+Rz(0.0) | Qureg[42]
+Rz(4.227274003831) | Qureg[40]
+CX | ( Qureg[39], Qureg[40] )
+Allocate | Qureg[43]
+CX | ( Qureg[36], Qureg[43] )
+Rz(4.227274003831) | Qureg[43]
+CX | ( Qureg[36], Qureg[43] )
+Allocate | Qureg[44]
+CX | ( Qureg[40], Qureg[44] )
+Allocate | Qureg[46]
+Rz(0.0) | Qureg[44]
+CX | ( Qureg[40], Qureg[44] )
+Rz(1.149159662221) | Qureg[43]
+CX | ( Qureg[37], Qureg[43] )
+Rz(3.394556192664) | Qureg[43]
+CX | ( Qureg[37], Qureg[43] )
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[38], Qureg[42] )
+CX | ( Qureg[38], Qureg[43] )
+Rz(4.369960586753) | Qureg[43]
+Rz(3.394556192664) | Qureg[41]
+CX | ( Qureg[39], Qureg[41] )
+Allocate | Qureg[45]
+CX | ( Qureg[40], Qureg[45] )
+Rz(4.576176910816) | Qureg[45]
+CX | ( Qureg[40], Qureg[45] )
+Rz(7.713542963542) | Qureg[44]
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[39], Qureg[42] )
+Rz(4.576176910816) | Qureg[44]
+CX | ( Qureg[38], Qureg[43] )
+CX | ( Qureg[41], Qureg[44] )
+Rz(4.369960586753) | Qureg[42]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[39], Qureg[43] )
+Rz(12.4725188323) | Qureg[44]
+Rz(10.069579408885) | Qureg[45]
+CX | ( Qureg[41], Qureg[45] )
+Rz(0.0) | Qureg[45]
+Rz(0.0) | Qureg[43]
+CX | ( Qureg[41], Qureg[45] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[39], Qureg[43] )
+Rz(12.127218420796) | Qureg[45]
+X | Qureg[46]
+CX | ( Qureg[40], Qureg[46] )
+Rz(12.4725188323) | Qureg[46]
+CX | ( Qureg[40], Qureg[46] )
+Rz(4.892457392099) | Qureg[46]
+CX | ( Qureg[41], Qureg[46] )
+Rz(12.127218420796) | Qureg[46]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[41], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[42], Qureg[46] )
+Rz(4.227274003831) | Qureg[44]
+CX | ( Qureg[43], Qureg[44] )
+Rz(0.0) | Qureg[46]
+Allocate | Qureg[47]
+CX | ( Qureg[40], Qureg[47] )
+Rz(4.227274003831) | Qureg[47]
+CX | ( Qureg[40], Qureg[47] )
+Allocate | Qureg[48]
+CX | ( Qureg[44], Qureg[48] )
+Rz(0.0) | Qureg[48]
+CX | ( Qureg[44], Qureg[48] )
+Rz(1.149159662221) | Qureg[47]
+CX | ( Qureg[41], Qureg[47] )
+Rz(3.394556192664) | Qureg[47]
+Allocate | Qureg[49]
+CX | ( Qureg[44], Qureg[49] )
+Allocate | Qureg[51]
+Rz(4.576176910816) | Qureg[49]
+CX | ( Qureg[44], Qureg[49] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[47] )
+CX | ( Qureg[42], Qureg[46] )
+CX | ( Qureg[42], Qureg[47] )
+Rz(3.394556192664) | Qureg[45]
+CX | ( Qureg[43], Qureg[45] )
+Rz(4.369960586753) | Qureg[47]
+Rz(0.504392982742) | Qureg[48]
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[43], Qureg[46] )
+Rz(4.576176910816) | Qureg[48]
+Rz(4.369960586753) | Qureg[46]
+Rz(11.772342841206) | Qureg[49]
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[45], Qureg[49] )
+CX | ( Qureg[43], Qureg[46] )
+Rz(0.0) | Qureg[49]
+CX | ( Qureg[42], Qureg[47] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[43], Qureg[47] )
+Rz(12.4725188323) | Qureg[48]
+Rz(0.0) | Qureg[47]
+CX | ( Qureg[45], Qureg[49] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[43], Qureg[47] )
+Rz(12.127218420796) | Qureg[49]
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[47], Qureg[48] )
+Rz(4.227274003831) | Qureg[48]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[47], Qureg[49] )
+Rz(3.394556192664) | Qureg[49]
+CX | ( Qureg[47], Qureg[49] )
+H | Qureg[49]
+H | Qureg[48]
+H | Qureg[37]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+H | Qureg[49]
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(11.653347600933) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rx(10.995574287564) | Qureg[49]
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+H | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[48]
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+Rx(10.995574287564) | Qureg[37]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[37]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rx(10.995574287564) | Qureg[49]
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+H | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Allocate | Qureg[50]
+X | Qureg[51]
+CX | ( Qureg[44], Qureg[50] )
+Rz(12.4725188323) | Qureg[50]
+CX | ( Qureg[44], Qureg[50] )
+CX | ( Qureg[44], Qureg[51] )
+Rz(4.227274003831) | Qureg[51]
+CX | ( Qureg[44], Qureg[51] )
+Rz(10.421359196131) | Qureg[50]
+CX | ( Qureg[45], Qureg[50] )
+Rz(12.127218420796) | Qureg[50]
+Rz(6.131017312759) | Qureg[51]
+CX | ( Qureg[45], Qureg[50] )
+CX | ( Qureg[45], Qureg[51] )
+Rz(3.394556192664) | Qureg[51]
+CX | ( Qureg[46], Qureg[50] )
+Rz(0.0) | Qureg[50]
+CX | ( Qureg[45], Qureg[51] )
+CX | ( Qureg[46], Qureg[50] )
+CX | ( Qureg[46], Qureg[51] )
+Rz(4.369960586753) | Qureg[51]
+CX | ( Qureg[46], Qureg[51] )
+CX | ( Qureg[47], Qureg[50] )
+Rz(4.369960586753) | Qureg[50]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[47], Qureg[51] )
+Rz(0.0) | Qureg[51]
+CX | ( Qureg[47], Qureg[51] )
+H | Qureg[50]
+H | Qureg[39]
+H | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+H | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[50]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[39]
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+H | Qureg[50]
+H | Qureg[51]
+Rx(10.995574287564) | Qureg[39]
+Rx(1.570796326795) | Qureg[50]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[39]
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+H | Qureg[44]
+H | Qureg[41]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[41], Qureg[44] )
+H | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[44], Qureg[45] )
+Rz(11.653347600933) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[45]
+H | Qureg[44]
+CX | ( Qureg[41], Qureg[44] )
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+Rx(10.995574287564) | Qureg[44]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[44]
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[41], Qureg[44] )
+H | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[45]
+H | Qureg[44]
+CX | ( Qureg[41], Qureg[44] )
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+Rz(11.653347600933) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+H | Qureg[47]
+H | Qureg[46]
+H | Qureg[43]
+H | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[43], Qureg[46] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[43], Qureg[46] )
+H | Qureg[46]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[43], Qureg[46] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+Rx(10.995574287564) | Qureg[46]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+H | Qureg[46]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[43]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[43], Qureg[46] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[43], Qureg[46] )
+H | Qureg[46]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[46], Qureg[47] )
+Rz(11.653347600933) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+H | Qureg[49]
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[41], Qureg[44] )
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[37], Qureg[48] )
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[44], Qureg[45] )
+Rz(0.913023013426) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[41], Qureg[44] )
+CX | ( Qureg[40], Qureg[41] )
+Rx(10.995574287564) | Qureg[41]
+Rx(10.995574287564) | Qureg[40]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[40]
+H | Qureg[37]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+H | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[40]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[40]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[40], Qureg[41] )
+Rz(11.653347600933) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[41]
+H | Qureg[40]
+CX | ( Qureg[37], Qureg[40] )
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[40]
+Rx(10.995574287564) | Qureg[37]
+Rx(1.570796326795) | Qureg[40]
+H | Qureg[37]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[36], Qureg[37] )
+Rx(10.995574287564) | Qureg[40]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[37]
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[37]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+H | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[40]
+Rx(10.995574287564) | Qureg[37]
+Rx(1.570796326795) | Qureg[40]
+H | Qureg[37]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[41]
+H | Qureg[40]
+CX | ( Qureg[37], Qureg[40] )
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+Rz(11.653347600933) | Qureg[41]
+CX | ( Qureg[40], Qureg[41] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[36], Qureg[37] )
+H | Qureg[50]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[50]
+Rx(1.570796326795) | Qureg[39]
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[39], Qureg[50] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[43], Qureg[46] )
+CX | ( Qureg[42], Qureg[43] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[43]
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[42]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[38], Qureg[39] )
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[39], Qureg[42] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[42]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[43]
+H | Qureg[39]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[39]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+CX | ( Qureg[39], Qureg[42] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[42]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[42], Qureg[43] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[45], Qureg[48] )
+H | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(11.653347600933) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[49]
+H | Qureg[48]
+CX | ( Qureg[45], Qureg[48] )
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[48]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[48]
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[45], Qureg[48] )
+H | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[48]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[49]
+H | Qureg[48]
+CX | ( Qureg[45], Qureg[48] )
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+Rz(11.653347600933) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+Rx(10.995574287564) | Qureg[50]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[50]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[47], Qureg[50] )
+H | Qureg[50]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+Rx(10.995574287564) | Qureg[50]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[50]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[47]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[47], Qureg[50] )
+H | Qureg[50]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[50], Qureg[51] )
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+H | Qureg[43]
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[45]
+CX | ( Qureg[39], Qureg[42] )
+Rx(1.570796326795) | Qureg[45]
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[44], Qureg[45] )
+H | Qureg[46]
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[38], Qureg[39] )
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[38], Qureg[39] )
+CX | ( Qureg[39], Qureg[42] )
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+Rx(1.570796326795) | Qureg[46]
+Rx(1.570796326795) | Qureg[40]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[36], Qureg[37] )
+CX | ( Qureg[37], Qureg[40] )
+CX | ( Qureg[40], Qureg[41] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[42], Qureg[43] )
+Rz(0.913023013426) | Qureg[41]
+CX | ( Qureg[39], Qureg[42] )
+CX | ( Qureg[48], Qureg[49] )
+Rz(0.913023013426) | Qureg[49]
+CX | ( Qureg[48], Qureg[49] )
+CX | ( Qureg[45], Qureg[48] )
+CX | ( Qureg[44], Qureg[45] )
+CX | ( Qureg[46], Qureg[47] )
+CX | ( Qureg[47], Qureg[50] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[50], Qureg[51] )
+CX | ( Qureg[47], Qureg[50] )
+CX | ( Qureg[46], Qureg[47] )
+Rx(10.995574287564) | Qureg[45]
+Rx(10.995574287564) | Qureg[46]
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[45]
+H | Qureg[42]
+CX | ( Qureg[40], Qureg[41] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[42], Qureg[45] )
+H | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+H | Qureg[45]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[45]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[45], Qureg[46] )
+Rz(11.653347600933) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[46]
+H | Qureg[45]
+CX | ( Qureg[42], Qureg[45] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[42]
+Rx(1.570796326795) | Qureg[45]
+H | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+Rx(10.995574287564) | Qureg[45]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[42]
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[42]
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[42], Qureg[45] )
+H | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[42]
+Rx(1.570796326795) | Qureg[45]
+H | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[46]
+H | Qureg[45]
+CX | ( Qureg[42], Qureg[45] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+Rz(11.653347600933) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+Rx(10.995574287564) | Qureg[44]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+H | Qureg[44]
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[43]
+CX | ( Qureg[37], Qureg[40] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[43], Qureg[44] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[43], Qureg[44] )
+H | Qureg[44]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[43], Qureg[44] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+Rx(10.995574287564) | Qureg[44]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+H | Qureg[44]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[43]
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[43], Qureg[44] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[43], Qureg[44] )
+H | Qureg[44]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[38], Qureg[39] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[50]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[49]
+H | Qureg[38]
+CX | ( Qureg[36], Qureg[37] )
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+H | Qureg[50]
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rx(10.995574287564) | Qureg[50]
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+H | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[49]
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[50]
+Rx(10.995574287564) | Qureg[38]
+Rx(1.570796326795) | Qureg[49]
+H | Qureg[38]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rx(10.995574287564) | Qureg[50]
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+H | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+H | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[39]
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+H | Qureg[48]
+H | Qureg[51]
+Rx(10.995574287564) | Qureg[39]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[39]
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+H | Qureg[50]
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[45]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[45]
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[42], Qureg[45] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[38], Qureg[49] )
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[45], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[42], Qureg[45] )
+CX | ( Qureg[41], Qureg[42] )
+Rx(10.995574287564) | Qureg[42]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+H | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[41], Qureg[42] )
+Rz(11.653347600933) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[42]
+H | Qureg[41]
+CX | ( Qureg[38], Qureg[41] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[41], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[37], Qureg[38] )
+Rx(10.995574287564) | Qureg[41]
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[41]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+H | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[41], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[42]
+H | Qureg[41]
+CX | ( Qureg[38], Qureg[41] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+Rz(11.653347600933) | Qureg[42]
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[37], Qureg[38] )
+H | Qureg[48]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[48]
+Rx(1.570796326795) | Qureg[39]
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[39], Qureg[48] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[43], Qureg[44] )
+CX | ( Qureg[40], Qureg[43] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[43]
+H | Qureg[40]
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[36], Qureg[39] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[40]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[43]
+H | Qureg[40]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[39]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[40]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[39], Qureg[40] )
+CX | ( Qureg[40], Qureg[43] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[49]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[46], Qureg[49] )
+H | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[45], Qureg[46] )
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[50]
+H | Qureg[49]
+CX | ( Qureg[46], Qureg[49] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[45], Qureg[46] )
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[45], Qureg[46] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[49]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[46], Qureg[49] )
+H | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[45], Qureg[46] )
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+CX | ( Qureg[45], Qureg[46] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[50]
+H | Qureg[49]
+CX | ( Qureg[46], Qureg[49] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[45], Qureg[46] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[47], Qureg[48] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[47], Qureg[48] )
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[48]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[47], Qureg[48] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[48]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[47]
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[47], Qureg[48] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[47], Qureg[48] )
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[48]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[48], Qureg[51] )
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+H | Qureg[43]
+H | Qureg[41]
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+H | Qureg[44]
+CX | ( Qureg[45], Qureg[46] )
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[39], Qureg[40] )
+Rx(1.570796326795) | Qureg[41]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[37], Qureg[38] )
+CX | ( Qureg[38], Qureg[41] )
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[36], Qureg[39] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[39] )
+CX | ( Qureg[39], Qureg[40] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[40], Qureg[43] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[41], Qureg[42] )
+CX | ( Qureg[49], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[49], Qureg[50] )
+CX | ( Qureg[46], Qureg[49] )
+CX | ( Qureg[47], Qureg[48] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[48], Qureg[51] )
+CX | ( Qureg[47], Qureg[48] )
+CX | ( Qureg[44], Qureg[47] )
+CX | ( Qureg[45], Qureg[46] )
+Rx(10.995574287564) | Qureg[46]
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[46]
+H | Qureg[44]
+Rx(10.995574287564) | Qureg[42]
+CX | ( Qureg[39], Qureg[40] )
+H | Qureg[42]
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[46]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+Rz(11.653347600933) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[42], Qureg[44] )
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[44]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[46]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+Rx(10.995574287564) | Qureg[46]
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[46]
+H | Qureg[44]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[42]
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[46]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[42], Qureg[44] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[42], Qureg[44] )
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[44]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[44], Qureg[46] )
+Rx(10.995574287564) | Qureg[45]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[43]
+CX | ( Qureg[38], Qureg[41] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[43], Qureg[45] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[43], Qureg[45] )
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[43], Qureg[45] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+Rx(10.995574287564) | Qureg[45]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+H | Qureg[45]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[43]
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[43], Qureg[45] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[43], Qureg[45] )
+H | Qureg[45]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[37], Qureg[38] )
+Rx(10.995574287564) | Qureg[50]
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[48]
+H | Qureg[38]
+CX | ( Qureg[36], Qureg[39] )
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+H | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+H | Qureg[48]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[48]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[38]
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+H | Qureg[48]
+H | Qureg[50]
+Rx(10.995574287564) | Qureg[38]
+Rx(1.570796326795) | Qureg[48]
+H | Qureg[38]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[48]
+H | Qureg[38]
+H | Qureg[48]
+Rx(1.570796326795) | Qureg[38]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[49]
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+H | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[49]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[39]
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+H | Qureg[49]
+H | Qureg[51]
+Rx(10.995574287564) | Qureg[39]
+Rx(1.570796326795) | Qureg[49]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[49]
+H | Qureg[39]
+H | Qureg[49]
+Rx(1.570796326795) | Qureg[39]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+H | Qureg[48]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[48]
+Rx(1.570796326795) | Qureg[38]
+Rz(11.653347600933) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[46]
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[40]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[38], Qureg[48] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(1.570796326795) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+Rz(0.913023013426) | Qureg[46]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[42], Qureg[44] )
+CX | ( Qureg[40], Qureg[42] )
+Rx(10.995574287564) | Qureg[42]
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[42]
+H | Qureg[40]
+Rx(10.995574287564) | Qureg[38]
+H | Qureg[38]
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[42]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[36], Qureg[38] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+Rz(11.653347600933) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[40]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[42]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[42]
+Rx(10.995574287564) | Qureg[40]
+H | Qureg[42]
+H | Qureg[40]
+H | Qureg[38]
+Rx(1.570796326795) | Qureg[38]
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[42]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[36]
+H | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(10.995574287564) | Qureg[42]
+H | Qureg[40]
+H | Qureg[42]
+Rx(1.570796326795) | Qureg[40]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[49]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[49]
+Rx(1.570796326795) | Qureg[39]
+Rz(11.653347600933) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[47]
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[41]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[39], Qureg[49] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(1.570796326795) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+Rz(0.913023013426) | Qureg[47]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[43], Qureg[45] )
+CX | ( Qureg[41], Qureg[43] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[43]
+H | Qureg[41]
+Rx(10.995574287564) | Qureg[39]
+H | Qureg[39]
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[41]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[43]
+Rx(10.995574287564) | Qureg[41]
+H | Qureg[43]
+H | Qureg[41]
+H | Qureg[39]
+Rx(1.570796326795) | Qureg[39]
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[37]
+H | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(10.995574287564) | Qureg[43]
+H | Qureg[41]
+H | Qureg[43]
+Rx(1.570796326795) | Qureg[41]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[41], Qureg[43] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[50]
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[46]
+H | Qureg[46]
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+H | Qureg[50]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[46], Qureg[48] )
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[48]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+H | Qureg[50]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+Rx(10.995574287564) | Qureg[48]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[50]
+H | Qureg[48]
+H | Qureg[46]
+Rx(1.570796326795) | Qureg[46]
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+H | Qureg[50]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+Rx(10.995574287564) | Qureg[44]
+H | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+CX | ( Qureg[46], Qureg[48] )
+H | Qureg[48]
+Rx(10.995574287564) | Qureg[50]
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[48]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[49]
+Rx(10.995574287564) | Qureg[47]
+H | Qureg[47]
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[47], Qureg[49] )
+H | Qureg[49]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+Rx(10.995574287564) | Qureg[49]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+H | Qureg[49]
+H | Qureg[47]
+Rx(1.570796326795) | Qureg[47]
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+H | Qureg[51]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+Rx(10.995574287564) | Qureg[45]
+H | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+CX | ( Qureg[47], Qureg[49] )
+H | Qureg[49]
+Rx(10.995574287564) | Qureg[51]
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[49]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(11.653347600933) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+H | Qureg[42]
+CX | ( Qureg[38], Qureg[40] )
+CX | ( Qureg[36], Qureg[38] )
+H | Qureg[36]
+Rx(1.570796326795) | Qureg[36]
+CX | ( Qureg[36], Qureg[38] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(1.570796326795) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+Rz(0.913023013426) | Qureg[42]
+CX | ( Qureg[40], Qureg[42] )
+CX | ( Qureg[38], Qureg[40] )
+Rx(10.995574287564) | Qureg[40]
+Deallocate | Qureg[40]
+Rz(11.653347600933) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+H | Qureg[43]
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+H | Qureg[37]
+Rx(1.570796326795) | Qureg[37]
+CX | ( Qureg[37], Qureg[39] )
+CX | ( Qureg[39], Qureg[41] )
+Rx(1.570796326795) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+Rz(0.913023013426) | Qureg[43]
+CX | ( Qureg[41], Qureg[43] )
+CX | ( Qureg[39], Qureg[41] )
+CX | ( Qureg[37], Qureg[39] )
+Rx(10.995574287564) | Qureg[39]
+Deallocate | Qureg[39]
+Rz(11.653347600933) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+H | Qureg[50]
+Rx(1.570796326795) | Qureg[50]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+H | Qureg[44]
+Rx(1.570796326795) | Qureg[44]
+CX | ( Qureg[44], Qureg[46] )
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[48], Qureg[50] )
+Rz(0.913023013426) | Qureg[50]
+CX | ( Qureg[48], Qureg[50] )
+Rx(10.995574287564) | Qureg[50]
+Deallocate | Qureg[50]
+Rx(10.995574287564) | Qureg[41]
+Deallocate | Qureg[41]
+CX | ( Qureg[36], Qureg[38] )
+Rx(10.995574287564) | Qureg[36]
+Deallocate | Qureg[36]
+Rz(11.653347600933) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+H | Qureg[51]
+Rx(1.570796326795) | Qureg[51]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+H | Qureg[45]
+Rx(1.570796326795) | Qureg[45]
+CX | ( Qureg[45], Qureg[47] )
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[49], Qureg[51] )
+Rz(0.913023013426) | Qureg[51]
+CX | ( Qureg[49], Qureg[51] )
+Rx(10.995574287564) | Qureg[51]
+Deallocate | Qureg[51]
+CX | ( Qureg[46], Qureg[48] )
+CX | ( Qureg[44], Qureg[46] )
+Rx(10.995574287564) | Qureg[46]
+Deallocate | Qureg[46]
+Rx(10.995574287564) | Qureg[37]
+Deallocate | Qureg[37]
+Rx(10.995574287564) | Qureg[48]
+Deallocate | Qureg[48]
+CX | ( Qureg[47], Qureg[49] )
+CX | ( Qureg[45], Qureg[47] )
+Rx(10.995574287564) | Qureg[47]
+Deallocate | Qureg[47]
+Rx(10.995574287564) | Qureg[49]
+Deallocate | Qureg[49]
+Rx(10.995574287564) | Qureg[44]
+Deallocate | Qureg[44]
+Rx(10.995574287564) | Qureg[45]
+Deallocate | Qureg[45]
+Rx(10.995574287564) | Qureg[42]
+Deallocate | Qureg[42]
+Rx(10.995574287564) | Qureg[43]
+Deallocate | Qureg[43]
+Rx(10.995574287564) | Qureg[38]
+Deallocate | Qureg[38]

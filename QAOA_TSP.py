@@ -47,8 +47,10 @@ with open(solution_file, "w") as f:  # write in time!
         matr = data[i]
         H_cost = TSP_H_cost(matr)
         H_mixer = TSP_H_mixers(n-1)
-        def cost_func(x): return tsp_cost(tsp_bits_convert(x,prepend=True), matr)
-        qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, H_mixer=H_mixer, ansatz_func=TSP_Ansatz, cost_eval=cost_func,verbose=True)# apply operator ansatz
+        def cost_func(x): return tsp_cost(
+            tsp_bits_convert(x, prepend=True), matr)
+        qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, H_mixer=H_mixer, ansatz_func=TSP_Ansatz,
+                    cost_eval=cost_func, verbose=True)  # apply operator ansatz
 
         # qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, n_sampling=0)  # naive version
 
