@@ -1,15 +1,21 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
-from qaoa.tests.random_graph_generator import decode_matrix_list
-from qaoa.hamiltonians.graph_converter import TSP_H_cost
-from qaoa.ansatzes.operator_ansatz import TSP_H_mixers, TSP_Ansatz
-from qaoa.tests.tsp_solver import tsp_cost, tsp_bits_convert
-from qaoa.backends.qaoa import QAOA
-from qaoa.utils.utilities import timer, report
+from optimizeq.utils.random_graph_generator import decode_matrix_list
+from optimizeq.hamiltonians import TSP_H_cost
+from optimizeq.ansatzes import TSP_H_mixers, TSP_Ansatz
+from optimizeq.utils.tsp_solver import tsp_cost, tsp_bits_convert
+from optimizeq import QAOA
+from optimizeq.utils import timer, report
+from optimizeq.utils.projectq_header import *  # eng is initialized!
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-n', help="problem size", type=int)
+parser.add_argument('-p', help="QAOA layer number", type=int)
+
+args = parser.parse_args()
 
 # %% initialize engine
-
-from qaoa.utils.projectq_header import *  # eng is initialized!
 
 print('compiler engine initialization...')
 
@@ -19,11 +25,18 @@ solution_file = "./data/qaoa_tsp_solution"
 
 
 #%% set parameters
+if args.p is None:
+    p = 1
+else:
+    p = args.p
 
-p = 1
-n = 4
+if args.n is None:
+    n = 4
+else:
+    n = args.n
+
+N = 100
 n_qubits = (n-1)**2
-N = 1
 report_rate = 1
 n_sampling = 50
 
