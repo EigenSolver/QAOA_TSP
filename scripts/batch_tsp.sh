@@ -2,5 +2,5 @@
 
 for i in $(seq 3 7)
 do
-python ./QAOA_TSP.py -n $i -N 100 
+python ./TSP_QAOA.py -n $i -N 100 
 done
