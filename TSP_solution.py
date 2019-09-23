@@ -3,26 +3,16 @@ import pandas as pd
 from optimizeq.utils.tsp_solver import held_karp
 from optimizeq.utils import report
 from optimizeq.utils.random_graph_generator import gen_dist_matr_list, decode_matrix_list
+from optimizeq.utils import qaoa_arg_parser
 
 #%%
 # set params
-import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-n', help="problem size", type=int)
-parser.add_argument('-N', help="sample size", type=int)
 
-args = parser.parse_args()
-
-if args.N is None:
-    N = 100
-else:
-    N = args.N
-
-if args.n is None:
-    n = 4
-else:
-    n = args.n
+args = qaoa_arg_parser.parse_args()
+N = args.N
+n = args.n
+p = args.p
 
 
 scale = 10

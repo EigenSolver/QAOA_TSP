@@ -1,31 +1,19 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 import networkx as nx
-
-
 from optimizeq.utils.maxcut_solver import goemans_williamson
 from optimizeq.utils import report
 from optimizeq.utils.random_graph_generator import gen_adj_matr_list, decode_matrix_list
-import argparse
+from optimizeq.utils import qaoa_arg_parser
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-n', help="problem size", type=int)
-parser.add_argument('-N', help="sample size", type=int)
-
-args = parser.parse_args()
+args = qaoa_arg_parser.parse_args()
+N = args.N
+n = args.n
+p = args.p
 
 #%%
 # set params
 
-if args.N is None:
-    N = 100
-else:
-    N = args.N
-
-if args.n is None:
-    n = 4
-else:
-    n = args.n
 
 tag = "_n={}_N={}".format(n, N)
 
