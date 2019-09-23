@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
-
 import pandas as pd
+from optimizeq.utils.random_graph_generator import decode_matrix_list
+from optimizeq.hamiltonians import MAXCUT_H_cost
+from optimizeq.utils import timer, report
+from optimizeq import QAOA
+from optimizeq.utils.projectq_header import *  # eng is initialized!
 
-from qaoa.tests.random_graph_generator import decode_matrix_list
-from qaoa.hamiltonians.graph_converter import MAXCUT_H_cost
-from qaoa.utils.utilities import timer, report
-
-# %% initialize engine
-from qaoa.backends.qaoa import QAOA
-from qaoa.utils.projectq_header import *  # eng is initialized!
-
+# %%
 print('compiler engine initialization...')
 
 matrix_file = "./data/random_maxcut_matrix"

@@ -36,6 +36,8 @@ else:
     n = args.n
 
 N = 100
+
+
 n_qubits = (n-1)**2
 report_rate = 1
 n_sampling = 50
