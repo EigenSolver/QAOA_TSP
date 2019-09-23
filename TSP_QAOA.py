@@ -6,7 +6,7 @@ from optimizeq.ansatzes import TSP_H_mixers, TSP_Ansatz
 from optimizeq.utils.tsp_solver import tsp_cost, tsp_bits_convert
 from optimizeq import QAOA
 from optimizeq.utils import timer, report
-from optimizeq.utils.projectq_header import *  # eng is initialized!
+from optimizeq.utils.hiq_header import *  # eng is initialized!
 from optimizeq.utils import qaoa_arg_parser
 
 args = qaoa_arg_parser.parse_args()
@@ -38,6 +38,9 @@ opt_method = "COBYLA"
 opt_option = {'maxiter': 10000, 'tol': 0.2}
 
 tag = "_n={0}_N={1}_p={2}_method={3}".format(n, N, p, opt_method)
+
+backend = SimulatorMPI(gate_fusion=True, num_local_qubits=n_qubits)
+eng = HiQMainEngine(backend, engines)
 
 # %%
 print("tsp with "+tag)

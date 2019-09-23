@@ -5,7 +5,7 @@ from optimizeq.utils.maxcut_solver import maxcut_count
 from optimizeq.hamiltonians import MAXCUT_H_cost
 from optimizeq.utils import timer, report
 from optimizeq import QAOA
-from optimizeq.utils.projectq_header import *  # eng is initialized!
+from optimizeq.utils.hiq_header import *  # eng is initialized!
 from optimizeq.utils import qaoa_arg_parser
 
 args = qaoa_arg_parser.parse_args()
@@ -35,10 +35,11 @@ opt_method = "COBYLA"
 opt_option = {'maxiter': 10000, 'tol': 0.2}
 tag = "_n={0}_N={1}_p={2}_method={3}".format(n, N, p, opt_method)
 
+backend = SimulatorMPI(gate_fusion=True, num_local_qubits=n)
+eng = HiQMainEngine(backend, engines)
 
 # %%
 print("maxcut with "+tag)
-
 
 solution = []
 for i in range(N):
