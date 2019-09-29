@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 import pandas as pd
 from optimizeq.utils.random_graph_generator import decode_matrix_list
-from optimizeq.hamiltonians import TSP_H_cost
-from optimizeq.ansatzes import TSP_H_mixers, TSP_Ansatz
+from optimizeq.hamiltonians import tsp_h_cost
+from optimizeq.ansatzes import tsp_h_mixers, tsp_ansatz
 from optimizeq.utils.tsp_solver import tsp_cost, tsp_bits_convert
 from optimizeq import QAOA
 from optimizeq.utils import timer, report
-from optimizeq.utils.hiq_header import *  # eng is initialized!
+from optimizeq.utils.projectq_header import *  # eng is initialized!
 from optimizeq.utils import qaoa_arg_parser
 
 args = qaoa_arg_parser.parse_args()
@@ -39,8 +39,9 @@ opt_option = {'maxiter': 10000, 'tol': 0.2}
 
 tag = "_n={0}_N={1}_p={2}_method={3}".format(n, N, p, opt_method)
 
-backend = SimulatorMPI(gate_fusion=True, num_local_qubits=n_qubits)
-eng = HiQMainEngine(backend, engines)
+# for hiq engine
+# backend = SimulatorMPI(gate_fusion=True, num_local_qubits=n_qubits)
+# eng = HiQMainEngine(backend, engines)
 
 # %%
 print("tsp with "+tag)
@@ -50,12 +51,12 @@ solution = []
 with open(solution_file, "w") as f:  # write in time!
     for i in range(N):
         matr = data[i]
-        H_cost = TSP_H_cost(matr)
-        H_mixer = TSP_H_mixers(n-1)
-        # print(TSP_Ansatz(eng,n_qubits))
+        H_cost = tsp_h_cost(matr)
+        H_mixer = tsp_h_mixers(n-1)
+        # print(tsp_ansatz(eng,n_qubits))
         def cost_func(x): return tsp_cost(
             tsp_bits_convert(x, prepend=True), matr)
-        qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, H_mixer=H_mixer, ansatz_func=TSP_Ansatz,
+        qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, H_mixer=H_mixer, ansatz_func=tsp_ansatz,
                     cost_eval=cost_func, verbose=True)  # apply operator ansatz
 
         # qaoa = QAOA(eng, H_cost, n_qubits, n_steps=p, n_sampling=0)  # naive version
