@@ -1,0 +1,57 @@
+\documentclass[a4paper, amsfonts, amssymb, amsmath, reprint, showkeys, nofootinbib, twoside]{revtex4-1}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorinlistoftodos, color=green!40, prependcaption]{todonotes}
+\input{preamble}
+\usepackage[pdftex, pdftitle={Article}, pdfauthor={Author}]{hyperref} % For hyperlinks in the PDF
+%\setlength{\marginparwidth}{2.5cm}
+\bibliographystyle{apsrev4-1}
+\begin{document}
+\title{My Title}
+
+\author{Author}
+    \email[Correspondence email address: ]{email@institution.com}% Your name
+    \affiliation{University of São Paulo, Institute of Physics, São Paulo, SP, Brazil}
+
+\date{\today} % Leave empty to omit a date
+
+\begin{abstract}
+\lipsum[1]
+\end{abstract}
+
+\keywords{first keyword, second keyword, third keyword}
+
+
+\maketitle
+
+\input{sections/section01.tex}  %I believe leaving the sections in separate files is more organized, change it if you desire 
+\input{sections/section02.tex}
+\input{sections/section03.tex}
+\input{sections/acknowledgements.tex}
+
+\begin{thebibliography}{4}
+\bibitem{Griffiths}
+D. J. Griffiths,
+\textit{Introduction to Electrodynamics}
+(Cambridge University Press, Cambridge, 2017).
+
+\bibitem{Fleming}
+A. Bobrinha,
+Revista Brasileira de Lorem Ipsum \textbf{23},
+179 (2002).
+
+\bibitem{Feynman}
+R. P. Feynman, R. B. Leighton and M. Sands,
+\textit{Lições de Física de Feynman}
+(Editora Bookman, Porto Alegre, 2008).
+
+\bibitem{Jackson-CE}
+J. D. Jackson,
+\textit{Classical Electrodynamics}
+(John Wiley \& Sons, Danvers, 1999).
+\end{thebibliography}
+
+\appendix*
+\input{sections/appendix1.tex}
+
+\end{document}

@@ -8,37 +8,50 @@
 %   See the REVTeX 4 README file for restrictions and more information.
 %
 % 
-\documentclass[%
-aps, %aps-style journal
-prl, % physical review letters
-preprint, % double spaced
-12pt, % 12 point font
-amsfonts, % ams fonts
-amssymb, % ams symbols
-amsmath, % ams math  features
-% endfloats,% put all figures/tables at  end, one per page
-notitlepage, % start on the first page
-raggedbottom, % allow variation at bottom
-]{revtex4-1}
+\documentclass[a4paper, amsfonts, amssymb, amsmath, reprint, showkeys, nofootinbib, twoside]{revtex4-1}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[colorinlistoftodos, color=green!40, prependcaption]{todonotes}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[left=23mm,right=13mm,top=35mm,columnsep=15pt]{geometry} 
+\usepackage{adjustbox}
+\usepackage{placeins}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{csquotes}
+\usepackage[pdftex, pdftitle={Article}, pdfauthor={Author}]{hyperref} % For hyperlinks in the PDF
+%\setlength{\marginparwidth}{2.5cm}
+\bibliographystyle{apsrev4-1}
 
 \usepackage{graphicx}% Include figure files
 \usepackage{tikz}
-\newcommand{\bra}[1]{|#1\rangle}
-\newcommand{\ket}[1]{|#1\langle}
 \newcommand\hlight[1]{\tikz[overlay, remember picture,baseline=-\the\dimexpr\fontdimen22\textfont2\relax]\node[rectangle,fill=blue!50,rounded corners,fill opacity = 0.2,draw,thick,text opacity =1] {$#1$};} 
-
 
 \begin{document}
 
 \preprint{}
 
 \title{An efficient QAOA scheme for enconding undirected travelling salesman problem}
-% Force line breaks with \\
 \author{Yuning Zhang}
-
-% \affiliation{SUSTech}
+\email{yuningzhang@ucsb.edu}% Your name
 
 \date{\today}
+\author{Xiangjing Liu}
+%please add your information
+\author{Bin Cheng}
+\date{\today} % Leave empty to omit a date
+\affiliation{Institute of Quantum Science and Engineering, Southern University of Science and Technology}
+\begin{abstract}
+Quantum Approximate Optimization Algorithm (QAOA)\cite{farhi_quantum_2014} is epxected to solve combinatorial optimization problems on NISQ devices. To achieve this goal, some modifications on original QAOA scheme must be adapted to encoding optimization problems into Hamiltonians. In this paper, we report a new approach to encoding travelling salesman problem based on Quantum Alternating Operator Ansatz\cite{hadfield_quantum_2019}. The encoding could reduce required qubits by half on undirected TSP. 
+
+\end{abstract}
+
+\keywords{Quantum Approximate Optimization Algorithm, Travelling Salesman Problem}
+
 \maketitle
 
 \section{Introduction}
@@ -51,7 +64,7 @@ For directed TSP, the solution is an arrangement for the order of all cities. Th
 \section{Target Hamiltonian}
 \begin{figure}[b]
     \centering
-    \includegraphics[width=0.5\textwidth]{comp_graph.png}
+    \includegraphics[width=0.3\textwidth]{comp_graph.png}
     \caption{Complete Graph}
     \label{}
 \end{figure}
@@ -71,11 +84,12 @@ Eg.
 $0\rightarrow3\rightarrow1\rightarrow2\rightarrow4$ is a solution for a 5 cities TSP,
 in undirected conditions, it equals to 
 $0\rightarrow4\rightarrow2\rightarrow1\rightarrow3$ which is the reverse of the previous solution.
+
 $$
 \begin{bmatrix}
     0&d_{0,1}&d_{0,2}&\hlight{d_{0,3}}&d_{0,4}&\\
     d_{1,0}&0&\hlight{d_{1,2}}&d_{1,3}&d_{1,4}&\\
-    d_{2,0}&d_{2,1}&0&d_{2,3}&0\hlight{d_{2,4}}&\\
+    d_{2,0}&d_{2,1}&0&d_{2,3}&\hlight{d_{2,4}}&\\
     d_{3,0}&\hlight{d_{3,1}}&d_{3,2}&0&d_{3,4}&\\
     \hlight{d_{4,0}}&d_{4,1}&d_{4,2}&d_{4,3}&0&\\
 \end{bmatrix}
@@ -104,7 +118,7 @@ $$
 \begin{bmatrix}
     0&\hlight{d_{0,1}}&d_{0,2}&d_{0,3}&d_{0,4}&\\
     d_{1,0}&0&\hlight{d_{1,2}}&d_{1,3}&d_{1,4}&\\
-    d_{2,0}&d_{2,1}&0&\hlight{d_{2,3}}&0d_{2,4}&\\
+    d_{2,0}&d_{2,1}&0&\hlight{d_{2,3}}&d_{2,4}&\\
     d_{3,0}&d_{3,1}&d_{3,2}&0&\hlight{d_{3,4}}&\\
     \hlight{d_{4,0}}&d_{4,1}&d_{4,2}&d_{4,3}&0&\\
 \end{bmatrix}
@@ -129,12 +143,15 @@ $$
 H_{mixer}=\sum_{\{i,j\},\{u,v\}}H_{(u,v)(i,j)}
 $$
 
+\section{Circuit Optimization}
+TBD
+\section{Numerical Results}
+TBD
 \section{Discussion}
 This encoding scheme is equivalent to the original operator ansatz, where at least $(n-1)^2$ qubits is needed. For the edge encoding, we need to map every non-zero matrix elements (one edge) to a qubit. Thus $n(n-1)$ qubits are required for a complete graph. But if we take the special situation where the TSP is undirected, the new encoding scheme will only requires $n(n-1)/2$ qubits since we can map index $\{i,j\}$ and $\{j,i\}$ to one same qubit, which represents one same edge. With this approach, the qubits needed for undirected TSP is reduced from $(n-1)^2$ to $n(n-1)/2$.
 
 
-\section{Reference}
-[1] S. Hadfield, Z. Wang, B. O’Gorman, E. G. Rieffel, D. Venturelli, and R. Biswas, Algorithms 12, 34 (2019).
+\bibliography{ref.bib}
 
 \end{document}
 %
